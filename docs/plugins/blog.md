@@ -1090,7 +1090,7 @@ The provided path is resolved from the [`docs` directory][mkdocs.docs_dir].
     a post. Multiple authors are supported. As an example, see
     [the `.authors.yml` file][.authors.yml] we're using for our blog.
 
-  [.authors.yml]: https://github.com/squidfunk/mkdocs-material/blob/master/docs/blog/.authors.yml
+  [.authors.yml]: https://github.com/squidfunk/mkdocs-material/blob/main/docs/blog/.authors.yml
 
 ---
 

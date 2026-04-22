@@ -203,7 +203,7 @@ sequenceDiagram
    making changes with care.
 
 5. Once the reviewer is fully satisfied with the changes, they can merge them
-   into the main branch (or 'master'). In the process, they may 'squash' your
+   into the main branch. In the process, they may 'squash' your
    commits together into a smaller number of commits and may edit the messages
    that describe them. Congratulations, you have now contributed to this project
    and should see the changes in the main branch under your name.
@@ -219,7 +219,7 @@ sequenceDiagram
 
 8. Similarly, delete the topic branch from your local clone and...
 
-9. pull the changes to its master branch.
+9. pull the changes to its main branch.
 
 ## Steps
 
@@ -271,7 +271,7 @@ unintended side effects.
 ### Committing to a branch
 
 Development for pull requests is best done in a topic branch separate from the
-`master` branch. Create a new local branch with `git switch -c <name>` and
+`main` branch. Create a new local branch with `git switch -c <name>` and
 commit your changes to this branch.
 
 When you want to push commits to your fork, you can do so with
@@ -308,10 +308,10 @@ you want to use when you are doing a `pull`:
 
 ```bash
 # making and committing some local changes
-push pull upstream master
+push pull upstream main
 ```
 
-This fetches changes from the `master` branch into your topic branch and merges
+This fetches changes from the `main` branch into your topic branch and merges
 them.
 
 ### Testing and reviewing changes
@@ -357,26 +357,26 @@ provide all the information that should be necessary.
 
 ### Deleting branches
 
-Once the pull request has been merged into the master branch of the Material
+Once the pull request has been merged into the main branch of the Material
 for MkDocs repository, you should remove the branch both from the fork on
 GitHub and from the local clone on your computer. This avoids possible
 confusion about the state of development.
 
-First, switch back to the `master` branch with `git switch master` and then
+First, switch back to the `main` branch with `git switch main` and then
 delete the branch used for the PR using `git branch -d <name>`.
 
 ### Subsequent Pull Requests
 
 It is important that subsequent pull requests are started from an up-to-date
-history of the `master` branch. One way to achieve this is to delete the fork
+history of the `main` branch. One way to achieve this is to delete the fork
 and start with an entirely new one next time round.
 
 If you contribute to Material for MkDocs more often or just happen to be
 doing two or more pull requests in succession, you can also just make sure
 to sync your fork (using the GitHub UI) and pull from it into your local
 repository. So, just delete the topic branch you created (both locally and in
-your fork) and pull from the main repository's `master` branch into your
-`master` branch before starting work on a new pull request.
+your fork) and pull from the main repository's `main` branch into your
+`main` branch before starting work on a new pull request.
 
 ## Dos and Don'ts
 
