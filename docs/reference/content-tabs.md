@@ -45,6 +45,8 @@ open in a new tab:
 
 === "... or even me"
 
+    <span id="or-even-me"></span>
+
 You can copy the link of the tab and create a link on the same or any other
 page. For example, you can [jump to the third tab above this paragraph][tab_1].
 
@@ -64,7 +66,7 @@ page. For example, you can [jump to the third tab above this paragraph][tab_1].
 
     For more information, please [see the extension guide][slugification].
 
-  [tab_1]: #anchor-links--or-even-me
+  [tab_1]: #or-even-me
   [Python Markdown Extensions]: https://facelessuser.github.io/pymdown-extensions/
   [slugification]: ../setup/extensions/python-markdown-extensions.md#+pymdownx.tabbed.slugify
 

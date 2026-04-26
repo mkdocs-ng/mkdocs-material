@@ -209,10 +209,12 @@ For a list of all settings, please consult the [plugin documentation].
 
 ??? example "Expand to inspect example"
 
+    <a id="example"></a>
+
     For the official documentation, the [built-in privacy plugin] downloads the
     following resources:
 
-    ``` { .sh .no-copy #example }
+    ``` { .sh .no-copy }
     .
     └─ assets/external/
        ├─ unpkg.com/tablesort@5.3.0/dist/tablesort.min.js

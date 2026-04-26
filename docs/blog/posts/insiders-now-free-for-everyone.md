@@ -89,14 +89,14 @@ for quite some time. With the release of [9.7.0], all these features are now ava
 
   [Optimize plugin]: ../../plugins/optimize.md
   [Navigation path]: ../../setup/setting-up-navigation.md#navigation-path
-  [Blog plugin: advanced settings]: ../../setup/setting-up-a-blog.md#advanced-settings
+  [Blog plugin: advanced settings]: ../../setup/setting-up-a-blog.md#built-in-blog-plugin
   [Blog plugin: author profiles]: ../../setup/setting-up-a-blog.md#adding-author-profiles
   [Blog plugin: pinned posts]: ../../setup/setting-up-a-blog.md#pinning-a-post
   [Instant prefetching]: ../../setup/setting-up-navigation.md#instant-prefetching
   [Typeset plugin]: ../../plugins/typeset.md
   [Footnote tooltips]: ../../reference/footnotes.md#footnote-tooltips
   [Privacy plugin: external links]: ../../plugins/privacy.md#external-links
-  [Privacy plugin: advanced settings]: ../../setup/ensuring-data-privacy.md#advanced-settings
+  [Privacy plugin: advanced settings]: ../../setup/ensuring-data-privacy.md#built-in-privacy-plugin
   [Instant previews]: ../../setup/setting-up-navigation.md#instant-previews
   [Social plugin: custom layouts]: ../../setup/setting-up-social-cards.md#customization
   [Social plugin: background images]: ../../plugins/social.md#option.background_image
@@ -106,7 +106,7 @@ for quite some time. With the release of [9.7.0], all these features are now ava
   [Projects plugin]: ../../plugins/projects.md
   [Tags plugin: nested tags]: ../../setup/setting-up-tags.md#nested-tags
   [Tags plugin: shadow tags]: ../../setup/setting-up-tags.md#shadow-tags
-  [Tags plugin: advanced settings]: ../../setup/setting-up-tags.md#advanced-settings
+  [Tags plugin: advanced settings]: ../../setup/setting-up-tags.md#advanced-features
 
 !!! tip "[mkdocstrings Insiders is now free] as well"
 

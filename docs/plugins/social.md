@@ -1005,8 +1005,8 @@ plugins:
 
 The provided path is resolved from the root directory.
 
-  [theme.logo]: ../setup/changing-the-logo-and-icons.md#logo-image
-  [theme.icon.logo]: ../setup/changing-the-logo-and-icons.md#logo-icon-bundled
+  [theme.logo]: ../setup/changing-the-logo-and-icons.md#logo
+  [theme.icon.logo]: ../setup/changing-the-logo-and-icons.md#site-icons
 
 ---
 
