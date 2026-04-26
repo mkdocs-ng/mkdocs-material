@@ -12,7 +12,7 @@ package manager. If not, we recommend using [`docker`][docker].
     Material for MkDocs is now one of the simplest and most powerful frameworks
     for creating documentation for your project.
 
-  [MkDocs]: https://www.mkdocs.org
+  [MkDocs]: https://github.com/mkdocs-ng/mkdocs
   [pip]: #with-pip
   [docker]: #with-docker
 
@@ -27,13 +27,13 @@ Material for MkDocs with:
 === "Latest"
 
     ``` sh
-    pip install mkdocs-material
+    pip install mkdocs-ng-material
     ```
 
 === "9.x"
 
     ``` sh
-    pip install mkdocs-material=="9.*" # (1)!
+    pip install mkdocs-ng-material=="9.*" # (1)!
     ```
 
     1.  Material for MkDocs uses [semantic versioning][^2], which is why it's a
@@ -82,7 +82,7 @@ MkDocs on GitHub Pages in a step-by-step guide.
     really good introduction on the mechanics of Python package management and
     helps you troubleshoot if you run into errors.
 
-  [Python package]: https://pypi.org/project/mkdocs-material/
+  [Python package]: https://pypi.org/project/mkdocs-ng-material/
   [virtual environment]: https://realpython.com/what-is-pip/#using-pip-in-a-python-virtual-environment
   [semantic versioning]: https://semver.org/
   [upgrade to the next major version]: upgrade.md
@@ -100,13 +100,13 @@ and pull the image with:
 === "Latest"
 
     ```
-    docker pull squidfunk/mkdocs-material
+    docker pull ghcr.io/mkdocs-ng/mkdocs-material
     ```
 
 === "9.x"
 
     ```
-    docker pull squidfunk/mkdocs-material:9
+    docker pull ghcr.io/mkdocs-ng/mkdocs-material:9
     ```
 
 The `mkdocs` executable is provided as an entry point and `serve` is the
@@ -118,7 +118,7 @@ The following plugins are bundled with the Docker image:
 - [mkdocs-minify-plugin]
 - [mkdocs-redirects]
 
-  [Docker image]: https://hub.docker.com/r/squidfunk/mkdocs-material/
+  [Docker image]: https://github.com/mkdocs-ng/mkdocs-material/pkgs/container/mkdocs-material
   [mkdocs-minify-plugin]: https://github.com/byrnereese/mkdocs-minify-plugin
   [mkdocs-redirects]: https://github.com/datarobot/mkdocs-redirects
 
@@ -136,7 +136,7 @@ The following plugins are bundled with the Docker image:
     you can add them easily. Create a `Dockerfile` and extend the official image:
 
     ``` Dockerfile title="Dockerfile"
-    FROM squidfunk/mkdocs-material
+    FROM ghcr.io/mkdocs-ng/mkdocs-material
     RUN pip install mkdocs-macros-plugin
     RUN pip install mkdocs-glightbox
     ```
@@ -144,7 +144,7 @@ The following plugins are bundled with the Docker image:
     Next, build the image with the following command:
 
     ```
-    docker build -t squidfunk/mkdocs-material .
+    docker build -t mkdocs-ng-material .
     ```
 
     The new image will have additional packages installed and can be used
@@ -157,13 +157,13 @@ repository into a subfolder of your project root which might be useful if you
 want to use the very latest version:
 
 ```
-git clone https://github.com/squidfunk/mkdocs-material.git
+git clone https://github.com/mkdocs-ng/mkdocs-material.git
 ```
 
 Next, install the theme and its dependencies with:
 
 ```
-pip install -e mkdocs-material
+pip install -e mkdocs-ng-material
 ```
 
-  [GitHub]: https://github.com/squidfunk/mkdocs-material
+  [GitHub]: https://github.com/mkdocs-ng/mkdocs-material

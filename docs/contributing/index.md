@@ -10,9 +10,9 @@ issues and discussions several times a day, evolving our [issue tracker] and
 [discussion board] into a knowledge base – an important addition to
 our [documentation] – yielding value to both new and experienced users.
 
-  [discussion board]: https://github.com/squidfunk/mkdocs-material/discussions
-  [issue tracker]: https://github.com/squidfunk/mkdocs-material/issues
-  [documentation]: https://squidfunk.github.io/mkdocs-material/
+  [discussion board]: https://github.com/mkdocs-ng/mkdocs-material/discussions
+  [issue tracker]: https://github.com/mkdocs-ng/mkdocs-material/issues
+  [documentation]: https://mkdocs-ng.github.io/mkdocs-material/
 
 ## How you can contribute
 
@@ -163,7 +163,7 @@ with our community.
   respectful to our community and us maintainers? Could you just use a
   [:octicons-smiley-16: reaction][reaction] instead?
 
-  [Code of Conduct]: https://github.com/squidfunk/mkdocs-material/blob/main/CODE_OF_CONDUCT.md
+  [Code of Conduct]: https://github.com/mkdocs-ng/mkdocs-material/blob/main/CODE_OF_CONDUCT.md
   [reaction]: https://github.blog/2016-03-10-add-reactions-to-pull-requests-issues-and-comments/
 
 ## Rights and responsibilities

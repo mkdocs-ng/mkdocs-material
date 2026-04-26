@@ -29,7 +29,7 @@ requires = [
 build-backend = "hatchling.build"
 
 [project]
-name = "mkdocs-material"
+name = "mkdocs-ng-material"
 dynamic = [
   "version",
   "dependencies",
@@ -68,10 +68,10 @@ imaging = [
 ]
 
 [project.urls]
-Documentation = "https://squidfunk.github.io/mkdocs-material/"
-Source = "https://github.com/squidfunk/mkdocs-material"
-Changelog = "https://squidfunk.github.io/mkdocs-material/changelog/"
-Issues = "https://github.com/squidfunk/mkdocs-material/issues"
+Documentation = "https://mkdocs-ng.github.io/mkdocs-material/"
+Source = "https://github.com/mkdocs-ng/mkdocs-material"
+Changelog = "https://mkdocs-ng.github.io/mkdocs-material/changelog/"
+Issues = "https://github.com/mkdocs-ng/mkdocs-material/issues"
 
 [project.entry-points."mkdocs.plugins"]
 "material/blog" = "material.plugins.blog.plugin:BlogPlugin"

@@ -20,15 +20,15 @@
 
 # Project information
 site_name: Material for MkDocs
-site_url: https://squidfunk.github.io/mkdocs-material/
+site_url: https://mkdocs-ng.github.io/mkdocs-material/
 site_author: Martin Donath
 site_description: >-
   Write your documentation in Markdown and create a professional static site in
   minutes – searchable, customizable, in 60+ languages, for all devices
 
 # Repository
-repo_name: squidfunk/mkdocs-material
-repo_url: https://github.com/squidfunk/mkdocs-material
+repo_name: mkdocs-ng/mkdocs-material
+repo_url: https://github.com/mkdocs-ng/mkdocs-material
 
 # Copyright
 copyright: Copyright &copy; 2016 - 2025 Martin Donath
@@ -113,17 +113,11 @@ extra:
     property: !ENV GOOGLE_ANALYTICS_KEY
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/squidfunk
+      link: https://github.com/mkdocs-ng
     - icon: fontawesome/brands/docker
-      link: https://hub.docker.com/r/squidfunk/mkdocs-material/
+      link: https://github.com/mkdocs-ng/mkdocs-material/pkgs/container/mkdocs-material
     - icon: fontawesome/brands/python
-      link: https://pypi.org/project/mkdocs-material/
-    - icon: fontawesome/brands/bluesky
-      link: https://bsky.app/profile/squidfunk.bsky.social
-    - icon: fontawesome/brands/mastodon
-      link: https://fosstodon.org/@squidfunk
-    - icon: fontawesome/brands/x-twitter
-      link: https://x.com/squidfunk
+      link: https://pypi.org/project/mkdocs-ng-material/
 
 # Extensions
 markdown_extensions:
@@ -153,7 +147,7 @@ markdown_extensions:
   - pymdownx.magiclink:
       normalize_issue_symbols: true
       repo_url_shorthand: true
-      user: squidfunk
+      user: mkdocs-ng
       repo: mkdocs-material
   - pymdownx.mark
   - pymdownx.smartsymbols
@@ -275,7 +269,7 @@ nav:
       - Requesting a change: contributing/requesting-a-change.md
       - Adding translations: contributing/adding-translations.md
       - Making a pull request: contributing/making-a-pull-request.md
-      - Asking a question: https://github.com/squidfunk/mkdocs-material/discussions
+      - Asking a question: https://github.com/mkdocs-ng/mkdocs-material/discussions
     - Guides:
       - Creating a reproduction: guides/creating-a-reproduction.md
   - Blog:

@@ -265,7 +265,7 @@ directly in the source of the theme and recompile it.
 First, clone the repository:
 
 ```
-git clone https://github.com/squidfunk/mkdocs-material
+git clone https://github.com/mkdocs-ng/mkdocs-material
 cd mkdocs-material
 ```
 

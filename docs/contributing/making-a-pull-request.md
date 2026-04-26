@@ -180,7 +180,7 @@ sequenceDiagram
    request. This signals to everyone that consider the work 'done' and that it
    can be reviewed with a view to accepting and integrating it.
 
-2. Request a review from the maintainer, `@squidfunk`.
+2. Request a review from the maintainer.
 
 3.  The maintainer may make comments on your code, which you should discuss with
     them. Bear in mind when doing this that the maintainer may have a different
@@ -245,7 +245,7 @@ that people who come across it know that they have found a temporary fork rather
 than the original or a permanent fork of the project. You may also want to add
 a description that clarifies what the repository is for.
 
-[repository]: https://github.com/squidfunk/mkdocs-material
+[repository]: https://github.com/mkdocs-ng/mkdocs-material
 
 ### Setting up a development environment
 
@@ -293,12 +293,12 @@ This is what it might look like:
 $ git remote -v
 origin	git@github.com:<your_username>/mkdocs-material-fork.git (fetch)
 origin	git@github.com:<your_username>/mkdocs-material-fork.git (push)
-$ git remote add upstream https://github.com/squidfunk/mkdocs-material.git
+$ git remote add upstream https://github.com/mkdocs-ng/mkdocs-material.git
 $ git remote -v
 origin	git@github.com:alexvoss/mkdocs-material-fork.git (fetch)
 origin	git@github.com:alexvoss/mkdocs-material-fork.git (push)
-upstream	https://github.com/squidfunk/mkdocs-material.git (fetch)
-upstream	https://github.com/squidfunk/mkdocs-material.git (push)
+upstream	https://github.com/mkdocs-ng/mkdocs-material.git (fetch)
+upstream	https://github.com/mkdocs-ng/mkdocs-material.git (push)
 ```
 
 After you have done this, you can pull any concurrent changes from the upstream
@@ -336,13 +336,13 @@ shows how your new feature is meant to work.
   repository.
 
 [smoke tests]: https://en.wikipedia.org/wiki/Smoke_testing_(software)
-[minimal reproduction]: https://squidfunk.github.io/mkdocs-material/guides/creating-a-reproduction/
+[minimal reproduction]: https://mkdocs-ng.github.io/mkdocs-material/guides/creating-a-reproduction/
 [Material for MkDocs Examples]: https://github.com/mkdocs-material/examples
 
 - Ideally, also test the examples in the [examples repository].
 
 [examples repository]: https://github.com/mkdocs-material/examples
-[projects plugin]: https://squidfunk.github.io/mkdocs-material/plugins/projects/
+[projects plugin]: https://mkdocs-ng.github.io/mkdocs-material/plugins/projects/
 
 ### Creating the pull request
 
