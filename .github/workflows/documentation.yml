@@ -43,9 +43,16 @@ jobs:
         with:
           fetch-depth: 0
           sparse-checkout: |
+            pyproject.toml
+            requirements.txt
             docs
             includes
+            material/__init__.py
+            material/extensions
             material/overrides
+            material/plugins
+            material/templates
+            material/utilities
             src/templates/partials/languages
 
       - name: Set up Python runtime
