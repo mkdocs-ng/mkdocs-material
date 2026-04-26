@@ -13,13 +13,13 @@ Alternatively, if you're running Material for MkDocs from within Docker, use:
 === "Unix, Powershell"
 
     ```
-    docker run --rm -it -v ${PWD}:/docs squidfunk/mkdocs-material new .
+    docker run --rm -it -v ${PWD}:/docs ghcr.io/mkdocs-ng/mkdocs-material new .
     ```
 
 === "Windows (cmd)"
 
     ```
-    docker run --rm -it -v "%cd%":/docs squidfunk/mkdocs-material new .
+    docker run --rm -it -v "%cd%":/docs ghcr.io/mkdocs-ng/mkdocs-material new .
     ```
 
 This will create the following structure:
@@ -70,7 +70,7 @@ plugins require the `site_url` to be set, so you should always do this.
             ``` json
             {
               "yaml.schemas": {
-                "https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs.yml"
+                "https://mkdocs-ng.github.io/mkdocs-material/schema.json": "mkdocs.yml"
               },
               "yaml.customTags": [ // (1)!
                 "!ENV scalar",
@@ -93,7 +93,7 @@ plugins require the `site_url` to be set, so you should always do this.
         2.  Add the following lines at the top of `mkdocs.yml`:
 
             ``` yaml
-            # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
+            # yaml-language-server: $schema=https://mkdocs-ng.github.io/mkdocs-material/schema.json
             ```
 
   [^1]:
@@ -107,8 +107,8 @@ plugins require the `site_url` to be set, so you should always do this.
   [schema.json]: schema.json
   [vscode-yaml]: https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml
   [settings.json]: https://code.visualstudio.com/docs/getstarted/settings
-  [extension]: https://github.com/squidfunk/mkdocs-material/tree/main/docs/schema/extensions
-  [plugin]: https://github.com/squidfunk/mkdocs-material/tree/main/docs/schema/plugins
+  [extension]: https://github.com/mkdocs-ng/mkdocs-material/tree/main/docs/schema/extensions
+  [plugin]: https://github.com/mkdocs-ng/mkdocs-material/tree/main/docs/schema/plugins
   [$ref]: https://json-schema.org/understanding-json-schema/structuring.html#ref
   [icons and emojis]: reference/icons-emojis.md
 
@@ -186,8 +186,8 @@ collection of templates:
 
 </div>
 
-[blog-template]: https://github.com/mkdocs-material/create-blog
-[social-cards-template]: https://github.com/mkdocs-material/create-social-cards
+[blog-template]: https://github.com/mkdocs-ng/create-blog
+[social-cards-template]: https://github.com/mkdocs-ng/create-social-cards
 
 ## Previewing as you write
 
@@ -213,13 +213,13 @@ If you're running Material for MkDocs from within Docker, use:
 === "Unix, Powershell"
 
     ```
-    docker run --rm -it -p 8000:8000 -v ${PWD}:/docs squidfunk/mkdocs-material
+    docker run --rm -it -p 8000:8000 -v ${PWD}:/docs ghcr.io/mkdocs-ng/mkdocs-material
     ```
 
 === "Windows"
 
     ```
-    docker run --rm -it -p 8000:8000 -v "%cd%":/docs squidfunk/mkdocs-material
+    docker run --rm -it -p 8000:8000 -v "%cd%":/docs ghcr.io/mkdocs-ng/mkdocs-material
     ```
 
 Point your browser to [localhost:8000][live preview] and you should see:
@@ -244,13 +244,13 @@ If you're running Material for MkDocs from within Docker, use:
 === "Unix, Powershell"
 
     ```
-    docker run --rm -it -v ${PWD}:/docs squidfunk/mkdocs-material build
+    docker run --rm -it -v ${PWD}:/docs ghcr.io/mkdocs-ng/mkdocs-material build
     ```
 
 === "Windows"
 
     ```
-    docker run --rm -it -v "%cd%":/docs squidfunk/mkdocs-material build
+    docker run --rm -it -v "%cd%":/docs ghcr.io/mkdocs-ng/mkdocs-material build
     ```
 
 The contents of this directory make up your project documentation. There's no

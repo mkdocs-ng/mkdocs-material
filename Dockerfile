@@ -64,9 +64,9 @@ RUN \
 && \
   if [ "${WITH_PLUGINS}" = "true" ]; then \
     pip install --no-cache-dir \
-      mkdocs-material[recommended] \
-      mkdocs-material[git] \
-      mkdocs-material[imaging]; \
+      mkdocs-ng-material[recommended] \
+      mkdocs-ng-material[git] \
+      mkdocs-ng-material[imaging]; \
   fi \
 && \
   if [ -e user-requirements.txt ]; then \

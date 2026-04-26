@@ -1,5 +1,5 @@
 {
-  "name": "mkdocs-material",
+  "name": "mkdocs-ng-material",
   "version": "9.7.6",
   "description": "Documentation that simply works",
   "keywords": [
@@ -7,21 +7,19 @@
     "documentation",
     "theme"
   ],
-  "homepage": "https://squidfunk.github.io/mkdocs-material/",
+  "homepage": "https://mkdocs-ng.github.io/mkdocs-material/",
   "bugs": {
-    "url": "https://github.com/squidfunk/mkdocs-material/issues",
-    "email": "martin.donath@squidfunk.com"
+    "url": "https://github.com/mkdocs-ng/mkdocs-material/issues"
   },
   "license": "MIT",
   "private": true,
   "author": {
-    "name": "Martin Donath",
-    "email": "martin.donath@squidfunk.com"
+    "name": "Martin Donath"
   },
   "contributors": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/squidfunk/mkdocs-material.git"
+    "url": "https://github.com/mkdocs-ng/mkdocs-material.git"
   },
   "scripts": {
     "build": "rimraf material && ts-node -T tools/build --optimize",
