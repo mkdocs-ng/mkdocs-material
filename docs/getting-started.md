@@ -12,7 +12,7 @@ package manager. If not, we recommend using [`docker`][docker].
     Material for MkDocs is now one of the simplest and most powerful frameworks
     for creating documentation for your project.
 
-  [MkDocs]: https://github.com/mkdocs-ng/mkdocs-ng
+  [MkDocs]: https://github.com/mkdocs-ng/mkdocs
   [pip]: #with-pip
   [docker]: #with-docker
 
