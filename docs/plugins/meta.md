@@ -78,7 +78,7 @@ of the meta plugin and other built-in plugins are:
 
     ``` yaml title=".meta.yml"
     authors:
-      - squidfunk
+      - mkdocs-ng
     ```
 
 -   :material-tag-text: &nbsp; __[Built-in tags plugin][tags]__

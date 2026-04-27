@@ -431,7 +431,7 @@ nav:
   [Section index pages enabled]: ../assets/screenshots/navigation-index-on.png
   [Section index pages disabled]: ../assets/screenshots/navigation-index-off.png
   [toc.integrate]: #navigation-integration
-  [index pages]: https://www.mkdocs.org/user-guide/writing-your-docs/#index-pages
+  [index pages]: https://mkdocs-ng.github.io/mkdocs/user-guide/writing-your-docs/#index-pages
 
 ### Table of contents
 

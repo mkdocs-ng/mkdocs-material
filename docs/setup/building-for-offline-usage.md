@@ -5,7 +5,7 @@ you covered – with support from themes, [MkDocs] supports building
 offline-capable documentation. Notably, Material for MkDocs offers offline
 support for many of its features.
 
-  [MkDocs]: https://www.mkdocs.org
+  [MkDocs]: https://mkdocs-ng.github.io/mkdocs
 
 ## Configuration
 
@@ -35,7 +35,7 @@ For a list of all settings, please consult the [plugin documentation].
     download all external assets to distribute them with your documentation.
 
   [site search]: setting-up-site-search.md
-  [site directory]: https://www.mkdocs.org/user-guide/configuration/#site_dir
+  [site directory]: https://mkdocs-ng.github.io/mkdocs/user-guide/configuration/#site_dir
   [built-in privacy plugin]:../plugins/privacy.md
 
 #### Limitations

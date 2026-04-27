@@ -35,7 +35,7 @@ with:
 extra:
   social:
     - icon: fontawesome/brands/mastodon # (1)!
-      link: https://fosstodon.org/@squidfunk
+      link: https://fosstodon.org/@mkdocs-ng
 ```
 
 1.  Enter a few keywords to find the perfect icon using our [icon search] and
@@ -82,7 +82,7 @@ The following properties are available for each link:
         extra:
           social:
             - icon: fontawesome/brands/mastodon
-              link: https://fosstodon.org/@squidfunk
+              link: https://fosstodon.org/@mkdocs-ng
         ```
 
     === ":octicons-mail-16: Email"
@@ -104,8 +104,8 @@ The following properties are available for each link:
     extra:
       social:
         - icon: fontawesome/brands/mastodon
-          link: https://fosstodon.org/@squidfunk
-          name: squidfunk on Fosstodon
+          link: https://fosstodon.org/@mkdocs-ng
+          name: mkdocs-ng on Fosstodon
     ```
 
   [icon search]: ../reference/icons-emojis.md#search
@@ -142,7 +142,7 @@ extra:
     The subtle __Made with Material for MkDocs__ hint in the footer is one of
     the reasons why this project is so popular, as it tells the user how the
     site is generated, helping new users to discover this project. Before
-    removing please consider that you're enjoying the benefits of @squidfunk's
+    removing please consider that you're enjoying the benefits of @mkdocs-ng's
     work for free, as this project is Open Source and has a permissive license.
     Thousands of hours went into this project, most of them
     without any financial return.

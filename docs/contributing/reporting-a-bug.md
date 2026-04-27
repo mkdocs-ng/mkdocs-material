@@ -62,10 +62,10 @@ problems.__
   [additional CSS]: ../customization.md#additional-css
   [JavaScript]: ../customization.md#additional-javascript
   [theme extension]: ../customization.md#extending-the-theme
-  [theme.custom_dir]: https://www.mkdocs.org/user-guide/configuration/#custom_dir
-  [hooks]: https://www.mkdocs.org/user-guide/configuration/#hooks
-  [extra_css]: https://www.mkdocs.org/user-guide/configuration/#extra_css
-  [extra_javascript]: https://www.mkdocs.org/user-guide/configuration/#extra_javascript
+  [theme.custom_dir]: https://mkdocs-ng.github.io/mkdocs/user-guide/configuration/#custom_dir
+  [hooks]: https://mkdocs-ng.github.io/mkdocs/user-guide/configuration/#hooks
+  [extra_css]: https://mkdocs-ng.github.io/mkdocs/user-guide/configuration/#extra_css
+  [extra_javascript]: https://mkdocs-ng.github.io/mkdocs/user-guide/configuration/#extra_javascript
   [discussion board]: https://github.com/mkdocs-ng/mkdocs-material/discussions
   [StackOverflow]: https://stackoverflow.com
   [that our documentation explicitly mentions]: ?q="extends+base"
@@ -203,10 +203,10 @@ we maintainers can fix the bug in our code base.
 > need a clear description of it and quantify its impact, which is essential
 > for triage and prioritization.
 
-  [MkDocs]: https://www.mkdocs.org
+  [MkDocs]: https://mkdocs-ng.github.io/mkdocs
   [Python Markdown]: https://python-markdown.github.io/extensions/
   [Python Markdown Extensions]: https://facelessuser.github.io/pymdown-extensions/
-  [theme.name]: https://www.mkdocs.org/user-guide/configuration/#theme
+  [theme.name]: https://mkdocs-ng.github.io/mkdocs/user-guide/configuration/#theme
 
 ### Related links
 

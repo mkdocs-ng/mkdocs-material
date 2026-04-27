@@ -1,7 +1,7 @@
 ---
 date: 2024-08-19
 authors:
-  - squidfunk
+  - mkdocs-ng
   - alexvoss
   - katharinalisalin
 categories:
@@ -41,18 +41,18 @@ __This is the first article in a series:__
 
 ## A success story
 
-In 2024, Material for MkDocs has firmly established itself as a leading tool in the documentation framework landscape, with more than 5 million downloads each month as of this writing. What began as @squidfunk's personal project has evolved into a versatile resource for creating comprehensive documentation sites, personal websites, blogs, and notably, for managing knowledge both within and outside of organizations.
+In 2024, Material for MkDocs has firmly established itself as a leading tool in the documentation framework landscape, with more than 5 million downloads each month as of this writing. What began as @mkdocs-ng's personal project has evolved into a versatile resource for creating comprehensive documentation sites, personal websites, blogs, and notably, for managing knowledge both within and outside of organizations.
 
 With almost [50,000] public GitHub projects depending on Material for MkDocs, it's clear that the framework has made a substantial impact. Tens of thousands of authors rely on us to deliver documentation to millions of users each month.[^1] Beyond its adoption by [many popular Open Source projects], Material for MkDocs is trusted and financially supported by major corporations such as [AWS], [Microsoft], and [Siemens], among many other companies and individuals. We're very grateful for the continued support we receive, which allows us to devote our time to this project, making writing documentation enjoyable.
 
   [^1]:
     We've collected invaluable feedback from enterprises and other Open Source maintainers, which revealed that the actual numbers are even higher. Many organizations leverage the framework within private infrastructures, such as self-hosted platforms like GitLab, for internal knowledge management. This suggests that the true reach of Material for MkDocs extends far beyond what is publicly visible.
 
-  [50,000]: https://github.com/squidfunk/mkdocs-material/network/dependents
-  [many popular Open Source projects]: https://github.com/squidfunk/mkdocs-material?tab=readme-ov-file#trusted-by-
-  [AWS]: https://x.com/squidfunk/status/1740389441284579767
-  [Microsoft]: https://x.com/squidfunk/status/1801909506391105840
-  [Siemens]: https://x.com/squidfunk/status/1699799988069646761
+  [50,000]: https://github.com/mkdocs-ng/mkdocs-material/network/dependents
+  [many popular Open Source projects]: https://github.com/mkdocs-ng/mkdocs-material?tab=readme-ov-file#trusted-by-
+  [AWS]: https://x.com/mkdocs-ng/status/1740389441284579767
+  [Microsoft]: https://x.com/mkdocs-ng/status/1801909506391105840
+  [Siemens]: https://x.com/mkdocs-ng/status/1699799988069646761
 
 Our users particularly appreciate Material for MkDocs for its ease of use and straightforward setup. It simplifies the process by handling the complexities of web technologies for you, so you can build a production-ready static site in minutes without needing to invest years into mastering frontend development or JavaScript. This makes it accessible to a wide range of users, regardless of their technical background. Additionally, Material for MkDocs is MIT-licensed and free to use, which has contributed to its widespread adoption, and allows everybody to build sophisticated documentation sites at no cost.
 
@@ -69,11 +69,11 @@ Our vision is to provide you with the tools that allow you to __own your docs__,
 
 ## Challenges
 
-Now, let's talk about our journey and the particular challenges we're addressing. With "we", we're referring to the incredible team that @squidfunk was fortunate to build around his original work, thanks to the financial support he receives from his [sponsors]. This remarkable team includes @alexvoss and @katharinalisalin, whose invaluable contributions in research, development, and community support have been essential to the project's ongoing success.
+Now, let's talk about our journey and the particular challenges we're addressing. With "we", we're referring to the incredible team that @mkdocs-ng was fortunate to build around his original work, thanks to the financial support he receives from his [sponsors]. This remarkable team includes @alexvoss and @katharinalisalin, whose invaluable contributions in research, development, and community support have been essential to the project's ongoing success.
 
 Together, we've started exploring new technologies, incorporating the feedback we received from our users, and rethinking critical components from first principles, serving our growing community one of the best frameworks to create documentation.
 
-  [sponsors]: https://github.com/sponsors/squidfunk
+  [sponsors]: https://github.com/sponsors/mkdocs-ng
 
 This section highlights the key areas we've been focusing on.
 
@@ -119,7 +119,7 @@ We're excited to share more details about this update in one of the next posts i
 
 Supporting multi-language sites in MkDocs is the [most requested feature on our discussion board] and in conversations with users, yet it presents significant challenges, as MkDocs does not natively support it. The same applies to versioning, which also involves synchronisation of multi-project builds. While the MkDocs ecosystem has developed [various plugins and tools] to address these issues, there is still substantial untapped potential. We began exploring these areas but quickly encountered problems that hindered our progress.
 
-  [most requested feature on our discussion board]: https://github.com/squidfunk/mkdocs-material/discussions/2346
+  [most requested feature on our discussion board]: https://github.com/mkdocs-ng/mkdocs-material/discussions/2346
   [various plugins and tools]: https://github.com/mkdocs/catalog?tab=readme-ov-file#-site-building-site-management
 
 As you may know, our initial effort involved the [projects plugin] that aims to extend MkDocs to add support for multi-project environments as a solid foundation to support multi-language sites and versioning. Unfortunately, we encountered significant challenges due to MkDocs' internal architecture and design constraints, which we're working actively on resolving.[^5]
@@ -130,22 +130,22 @@ As you may know, our initial effort involved the [projects plugin] that aims to 
     Implementing multi-project support in MkDocs is particularly challenging due to the lack of an official programmatic API, which complicates efforts to extend its functionality. Moreover, resolving navigation issues before building projects is crucial for ensuring proper interconnectivity. These challenges combined made the development of the projects plugin a complex endeavor.
 
   [projects plugin]: ../../plugins/projects.md
-  [good progress]: https://github.com/squidfunk/mkdocs-material/discussions/5800
+  [good progress]: https://github.com/mkdocs-ng/mkdocs-material/discussions/5800
 
 __:octicons-goal-16: Goal – Enable scaling documentation to any size or team structure by offering seamless methods for integrating multiple documentation projects, whether they involve different languages, versions, or distinct sections of an overall body of work.__
 
 As a result, we are developing a new approach to offer a more comprehensive and robust solution for both multi-language support and versioning. This new approach also intersects with adjacent functionalities like search, as many of our users are interested in [federated search] capabilities that combine results from multiple documentation sites into a unified search interface. Overcoming this challenge is one of the major hurdles we need to address before releasing the new search system.
 
-  [federated search]: https://github.com/squidfunk/mkdocs-material/issues/5230
+  [federated search]: https://github.com/mkdocs-ng/mkdocs-material/issues/5230
 
 ### Editing and collaboration
 
 We had considered developing a live editor in response to MkDocs' [performance issues with large projects], which in most cases stem from compute-intensive plugins that don't employ caching. A [proof of concept] based on [Pyodide] (= running Python in the browser) [generated significant interest] among users and prompted many organizations and individuals to share their collaborative workflows for feedback. Sadly, implementing this live editor proved to be very challenging, as it would require rebuilding substantial parts of MkDocs.[^6] After discontinuing work on this approach, our progress with multi-project support has renewed our belief that we can finally solve the sluggish editing experience that was reported several times over the last years.[^7]
 
   [performance issues with large projects]: https://github.com/mkdocs/mkdocs/issues/3695#issuecomment-2093299518
-  [proof of concept]: https://x.com/squidfunk/status/1338252230265360391
+  [proof of concept]: https://x.com/mkdocs-ng/status/1338252230265360391
   [Pyodide]: https://pyodide.org/
-  [generated significant interest]: https://github.com/squidfunk/mkdocs-material/issues/2110
+  [generated significant interest]: https://github.com/mkdocs-ng/mkdocs-material/issues/2110
 
   [^6]:
     Our [proof of concept] supported some features of Material for MkDocs but didn't cover them all. For instance, integrating support for icons or linking between documents would have necessitated reimplementing parts of MkDocs to bypass a full rebuild — something we obviously wanted to avoid. Additionally, certain links, such as those to blog posts generated from schemas, are not merely translated but computed dynamically, which means they cannot be inferred by replacing the `.md` extension with `.html`.
@@ -190,7 +190,7 @@ Almost a year ago, we introduced an [experimental chatbot] on our documentation 
 
 __:octicons-goal-16: Goal – We're envisioning creating a unified interface that seamlessly integrates advanced search, chat, and summarization features, providing an interactive documentation experience.__
 
-  [experimental chatbot]: https://github.com/squidfunk/mkdocs-material/discussions/6240
+  [experimental chatbot]: https://github.com/mkdocs-ng/mkdocs-material/discussions/6240
 
 As we delved into this ambitious project, we gained valuable insights from user feedback. Users began interacting with the chatbot in their native languages, an outcome we hadn't anticipated given that our documentation is in English. Remarkably (or obviously to those that work on LLMs year round), the chatbot responded in the same language. This ability of LLMs is one of the genuinely exciting features of these machine learning models as it has the potential to improve the accessibility of the documentation. However, while we employed state-of-the-art RAG methodologies, the results were mixed, and occasional hallucinations surfaced.
 
@@ -202,7 +202,7 @@ While we navigate the challenges and explore the opportunities of this project, 
 
 Thanks to the generous support from our sponsors, we're fortunate to be assembling a team capable of dedicating significant time and expertise to this endeavor. This newfound capacity allows us to delve deeper into core development while also engaging more comprehensively with our user community. A special mention goes to @kamilkrzyskow, one of our invaluable community experts, who has been essential in supporting users and fostering discussions on our platform.
 
-With the team's support, @squidfunk can concentrate on the heart of development, while we have begun investing in user research. This effort is helping us understand how organizations and individuals interact with our tools, guiding the project's future direction based on real feedback from numerous conversations with users and companies.
+With the team's support, @mkdocs-ng can concentrate on the heart of development, while we have begun investing in user research. This effort is helping us understand how organizations and individuals interact with our tools, guiding the project's future direction based on real feedback from numerous conversations with users and companies.
 
 Looking to expand our team further, we are committed to improving transparency and communication. Our previous work often happened behind the scenes due to time constraints, but we're now focused on making our processes more open and inviting for new contributors. By embracing this collaborative approach, we aim to enhance our tools and ensure they meet the evolving needs of our community.
 
@@ -218,7 +218,7 @@ In the coming months, we'll be sharing more details about our plans and how they
 
 - Our [organic approach to growth] is part of this strategy as it keeps us independent of individual funding sources and pressures to provide a return on investment, which is what causes many other projects to turn away from the principles of Open Source.
 
-  [organic approach to growth]: https://star-history.com/#squidfunk/mkdocs-material
+  [organic approach to growth]: https://star-history.com/#mkdocs-ng/mkdocs-material
 
 - Likewise, we are driven by the needs of the community for a rich ecosystem of adaptations of the core framework. Extensibility and modularity are key for this and we are working hard to improve the developer experience by providing clear interfaces.
 

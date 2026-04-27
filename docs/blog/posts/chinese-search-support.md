@@ -1,6 +1,6 @@
 ---
 date: 2022-05-05
-authors: [squidfunk]
+authors: [mkdocs-ng]
 title: Chinese search support
 description: >
   Insiders adds Chinese language support for the built-in search plugin – a
@@ -71,7 +71,7 @@ built-in search plugin.
 
 ---
 
-Note that this is an experimental feature, and I, @squidfunk, am not
+Note that this is an experimental feature, and I, @mkdocs-ng, am not
 proficient in Chinese (yet?). If you find a bug or think something can be
 improved, please [open an issue].
 
@@ -79,4 +79,4 @@ improved, please [open an issue].
   [zero-width whitespace]: https://en.wikipedia.org/wiki/Zero-width_space
   [separator]: ../../plugins/search.md#config.separator
   [q=支持]: ?q=支持
-  [open an issue]: https://github.com/squidfunk/mkdocs-material/issues/new/choose
+  [open an issue]: https://github.com/mkdocs-ng/mkdocs-material/issues/new/choose

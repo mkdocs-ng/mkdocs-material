@@ -1,6 +1,6 @@
 ---
 date: 2021-12-27
-authors: [squidfunk]
+authors: [mkdocs-ng]
 description: >
   2021 was a fantastic year for this project as we shipped many new awesome
   features and made this project sustainable
@@ -29,7 +29,7 @@ _This article showcases all features that were added in 2021 and gives an
 outlook on what's going to drop in 2022. Additionally, it provides some context
 on the history of the project._
 
-  [MkDocs]: https://www.mkdocs.org
+  [MkDocs]: https://mkdocs-ng.github.io/mkdocs
 
 ## A little history
 
@@ -87,10 +87,10 @@ free._
 
 Making Open Source sustainable is, after all, possible in 2021.
 
-  [the first version]: https://github.com/squidfunk/mkdocs-material/releases/tag/0.1.0
+  [the first version]: https://github.com/mkdocs-ng/mkdocs-material/releases/tag/0.1.0
   [Material for MkDocs 0.1.0]: the-past-present-and-future/mkdocs-material-0.1.0.png
   [Material for MkDocs 0.1.0 Search]: the-past-present-and-future/mkdocs-material-0.1.0-search.png
-  [protobluff]: https://github.com/squidfunk/protobluff
+  [protobluff]: https://github.com/mkdocs-ng/protobluff
 
 ## 2021 in numbers
 
@@ -252,12 +252,12 @@ features that will see the light of day in 2022:
   Material for MkDocs.
 
 This list is incomplete. Additionally, many new smaller features will be added
-next year, just as in 2021. You can follow [@squidfunk on X] to stay
+next year, just as in 2021. You can follow [@mkdocs-ng on X] to stay
 updated.
 
 __Happy new year!__ :tada:
 
-  [Instant previews]: https://x.com/squidfunk/status/1466794654213492743
-  [card grids]: https://github.com/squidfunk/mkdocs-material/issues/3018
-  [under investigation]: https://github.com/squidfunk/mkdocs-material/issues/3353
-  [@squidfunk on X]: https://x.com/squidfunk
+  [Instant previews]: https://x.com/mkdocs-ng/status/1466794654213492743
+  [card grids]: https://github.com/mkdocs-ng/mkdocs-material/issues/3018
+  [under investigation]: https://github.com/mkdocs-ng/mkdocs-material/issues/3353
+  [@mkdocs-ng on X]: https://x.com/mkdocs-ng

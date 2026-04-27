@@ -65,7 +65,7 @@ For a list of all settings, please consult the [plugin documentation].
     ```
 
   [dependencies for image processing]: ../plugins/requirements/image-processing.md
-  [site_url]: https://www.mkdocs.org/user-guide/configuration/#site_url
+  [site_url]: https://mkdocs-ng.github.io/mkdocs/user-guide/configuration/#site_url
 
 ## Usage
 
@@ -438,8 +438,8 @@ descender.[^2] This renders:
 
 ![Layer typography]
 
-  [config variable]: https://www.mkdocs.org/dev-guide/themes/#config
-  [page variable]: https://www.mkdocs.org/dev-guide/themes/#page
+  [config variable]: https://mkdocs-ng.github.io/mkdocs/dev-guide/themes/#config
+  [page variable]: https://mkdocs-ng.github.io/mkdocs/dev-guide/themes/#page
   [Layer typography]: ../assets/screenshots/social-cards-layer-typography.png
 
 #### Overflow

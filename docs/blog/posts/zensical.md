@@ -1,7 +1,7 @@
 ---
 date: 2025-11-05
 authors:
-  - squidfunk
+  - mkdocs-ng
   - alexvoss
   - katharinalisalin
   - pawamoy
@@ -71,7 +71,7 @@ Although we haven't reached full feature parity yet, you can already use Zensica
 
 _You can jump to the [compatibility] section to learn what is already supported._
 
-  [update on our foundational work]: https://github.com/squidfunk/mkdocs-material/discussions/8461
+  [update on our foundational work]: https://github.com/mkdocs-ng/mkdocs-material/discussions/8461
 
 ## What you can expect
 

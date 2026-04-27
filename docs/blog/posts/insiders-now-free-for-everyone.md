@@ -1,7 +1,7 @@
 ---
 date: 2025-11-11
 authors:
-  - squidfunk
+  - mkdocs-ng
   - alexvoss
   - katharinalisalin
   - pawamoy
@@ -34,7 +34,7 @@ _You can subscribe to [our newsletter] to stay in the loop_.
 
   [9.7.0]: ../../changelog/index.md#9.7.0
   [Zensical]: https://zensical.org
-  [maintenance mode]: https://github.com/squidfunk/mkdocs-material/issues/8523
+  [maintenance mode]: https://github.com/mkdocs-ng/mkdocs-material/issues/8523
   [goodbye to GitHub Sponsors]: zensical.md#goodbye-github-sponsors
   [compatibility with Material for MkDocs]: zensical.md#maximum-compatibility
   [Open Source, licensed under MIT]: https://zensical.org/about/license/
@@ -133,7 +133,7 @@ __From now on, bug fixes that we make to Material for MkDocs will only be releas
 Thus, please adjust your `requirements.txt` and GitHub Actions workflows:
 
 ```diff
-- pip install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders. git
+- pip install git+https://${GH_TOKEN}@github.com/mkdocs-ng/mkdocs-material-insiders. git
 + pip install mkdocs-material
 
 ```
@@ -185,7 +185,7 @@ Material for MkDocs has used semver version ranges for dependencies to ensure co
 
 ### Security
 
-We will not transfer ownership of the Material for MkDocs repository to another individual or organization. The repository and PyPI package will remain under the ownership of @squidfunk, which preserves the trusted supply chain our users depend on.
+We will not transfer ownership of the Material for MkDocs repository to another individual or organization. The repository and PyPI package will remain under the ownership of @mkdocs-ng, which preserves the trusted supply chain our users depend on.
 
 Thus, if you wish to take on maintenance of Material for MkDocs, please create a fork.
 

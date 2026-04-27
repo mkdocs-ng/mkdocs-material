@@ -1,6 +1,6 @@
 ---
 date: 2021-09-26
-authors: [squidfunk]
+authors: [mkdocs-ng]
 description: >
   Three new simple ways to exclude dedicated parts of a document from the search
   index, allowing for more fine-grained control

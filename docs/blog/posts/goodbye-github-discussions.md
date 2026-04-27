@@ -1,7 +1,7 @@
 ---
 date: 2025-11-18
 authors:
-  - squidfunk
+  - mkdocs-ng
   - alexvoss
   - katharinalisalin
   - pawamoy
@@ -29,7 +29,7 @@ _You can subscribe to [our newsletter] to stay in the loop_.
 <!-- more -->
 
   [Our new approach]: https://zensical.org/docs/community/how-we-work/
-  [maintenance mode]: https://github.com/squidfunk/mkdocs-material/issues/8523
+  [maintenance mode]: https://github.com/mkdocs-ng/mkdocs-material/issues/8523
   [Zensical]: https://zensical.org
   [two weeks ago]: zensical.md
   [our newsletter]: https://zensical.org/about/newsletter/
@@ -83,10 +83,10 @@ Despite these measures, we faced serveral structural challenges:
 
 5. __Bug reports on our discussion board__ – From time to time, our [contribution guidelines] were ignored, leading to spurious bug reports on our discussion board instead of our issue tracker – "search doesn't work" is not an actionable bug report. However, when users followed our [bug reporting guidelines], we were able to fix most bugs within 24-48 hours.
 
-  [Community Experts Program]: https://github.com/squidfunk/mkdocs-material/discussions/6363
+  [Community Experts Program]: https://github.com/mkdocs-ng/mkdocs-material/discussions/6363
   [GitHub Discussions]: https://github.com/features/discussions
-  [contribution guidelines]: https://squidfunk.github.io/mkdocs-material/contributing/
-  [bug reporting guidelines]: https://squidfunk.github.io/mkdocs-material/contributing/reporting-a-bug/
+  [contribution guidelines]: https://mkdocs-ng.github.io/mkdocs-material/contributing/
+  [bug reporting guidelines]: https://mkdocs-ng.github.io/mkdocs-material/contributing/reporting-a-bug/
 
 ### Addressing these challenges
 

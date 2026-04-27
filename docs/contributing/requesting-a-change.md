@@ -228,7 +228,7 @@ To maintain clarity and ensure that our roadmap remains focused and achievable,
 we've introduced a structured process and use a dedicated [backlog] to
 track and organize change requests, and how they fit into our roadmap.
 
-  [backlog]: https://github.com/users/squidfunk/projects/4/views/1
+  [backlog]: https://github.com/users/mkdocs-ng/projects/4/views/1
 
 Here’s how we handle new change requests:
 

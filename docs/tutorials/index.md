@@ -25,7 +25,7 @@ available as template repositories on GitHub.
     improvements that we can make through simple customization then we are happy
     to consider those.
 
-[provide any feedback you might have in this discussion thread]: https://github.com/squidfunk/mkdocs-material/discussions/7220
+[provide any feedback you might have in this discussion thread]: https://github.com/mkdocs-ng/mkdocs-material/discussions/7220
 
 ## Blogs
 * [Basics](blogs/basic.md) (20 min) <br/>

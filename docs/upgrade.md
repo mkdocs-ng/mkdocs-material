@@ -92,11 +92,11 @@ changes into your templates. A good starting point is to [inspect the diff].
     - [`content.html`][content.html]
     - [`header.html`][header.html]
 
-  [inspect the diff]: https://github.com/squidfunk/mkdocs-material/pull/4628/files#diff-3ca112736b9164701b599f34780107abf14bb79fe110c478cac410be90899828
+  [inspect the diff]: https://github.com/mkdocs-ng/mkdocs-material/pull/4628/files#diff-3ca112736b9164701b599f34780107abf14bb79fe110c478cac410be90899828
   [MkDocs 1.4.1]: https://github.com/mkdocs/mkdocs/releases/tag/1.4.1
-  [in config.plugins]: https://github.com/squidfunk/mkdocs-material/search?q=%22in+config.plugins%22
-  [content.html]: https://github.com/squidfunk/mkdocs-material/blob/main/src/templates/partials/content.html
-  [header.html]: https://github.com/squidfunk/mkdocs-material/blob/main/src/templates/partials/header.html
+  [in config.plugins]: https://github.com/mkdocs-ng/mkdocs-material/search?q=%22in+config.plugins%22
+  [content.html]: https://github.com/mkdocs-ng/mkdocs-material/blob/main/src/templates/partials/content.html
+  [header.html]: https://github.com/mkdocs-ng/mkdocs-material/blob/main/src/templates/partials/header.html
 
 ## Upgrading from 7.x to 8.x
 
@@ -146,7 +146,7 @@ viewports]:
     ```
 
   [Tabbed]: setup/extensions/python-markdown-extensions.md#tabbed
-  [better behavior on mobile viewports]: https://x.com/squidfunk/status/1424740370596958214
+  [better behavior on mobile viewports]: https://x.com/mkdocs-ng/status/1424740370596958214
 
 #### `pymdownx.superfences`
 
@@ -203,7 +203,7 @@ The following lines must be changed:
       - auto
     ```
 
-  [deprecated in MkDocs 1.2.0]: https://www.mkdocs.org/about/release-notes/#backward-incompatible-changes-in-12
+  [deprecated in MkDocs 1.2.0]: https://mkdocs-ng.github.io/mkdocs/about/release-notes/#backward-incompatible-changes-in-12
 
 ### Changes to `*.html` files { data-search-exclude }
 
@@ -460,7 +460,7 @@ matches the new structure:
     +  {% endif %}
     +  {% if not config.extra.generator == false %}
     +    Made with
-    +    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+    +    <a href="https://mkdocs-ng.github.io/mkdocs-material/" target="_blank" rel="noopener">
     +      Material for MkDocs
     +    </a>
     +  {% endif %}
@@ -482,7 +482,7 @@ matches the new structure:
     -        {% endif %}
     -        {% if not config.extra.generator == false %}
     -          Made with
-    -          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+    -          <a href="https://mkdocs-ng.github.io/mkdocs-material/" target="_blank" rel="noopener">
     -            Material for MkDocs
     -          </a>
     -        {% endif %}
@@ -1230,7 +1230,7 @@ in order to match the new way of specifying which icon to be used:
     extra:
       social:
         - icon: fontawesome/brands/github-alt
-          link: https://github.com/squidfunk
+          link: https://github.com/mkdocs-ng
     ```
 
 === "4.x"
@@ -1239,7 +1239,7 @@ in order to match the new way of specifying which icon to be used:
     extra:
       social:
         - type: github
-          link: https://github.com/squidfunk
+          link: https://github.com/mkdocs-ng
     ```
 
 ### Changes to `*.html` files { data-search-exclude }

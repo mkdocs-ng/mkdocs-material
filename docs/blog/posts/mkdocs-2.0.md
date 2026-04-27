@@ -3,7 +3,7 @@ date:
   created: 2026-02-18
   updated: 2026-04-13
 authors:
-  - squidfunk
+  - mkdocs-ng
   - alexvoss
   - katharinalisalin
 categories:
@@ -73,13 +73,13 @@ Based on the [official announcement], the published [roadmap], and several prior
 A release date has not been announced, so planning around a specific timeline remains difficult. However, the direction of travel has been hinted at by the maintainer on several occasions, and the pre-release version already confirms the impact of these changes on existing projects.
 
   [official announcement]: https://github.com/mkdocs/mkdocs/discussions/4077
-  [roadmap]: https://github.com/squidfunk/mkdocs-material/issues/8478#issuecomment-3778358483
+  [roadmap]: https://github.com/mkdocs-ng/mkdocs-material/issues/8478#issuecomment-3778358483
   [asked not to open issues or pull requests]: https://github.com/encode/mkdocs?tab=contributing-ov-file#maintainer-driven-issues
   [removing plugin support to simplify the codebase]: https://github.com/mkdocs/mkdocs/discussions/3815#discussioncomment-10398312
   [the plugin ecosystem]: https://github.com/mkdocs/catalog?tab=readme-ov-file#contents
   [navigation is passed to themes as pre-rendered HTML]: https://www.encode.io/mkdocs/styling/#templates
   [MkDocs 1.x is unmaintained]: https://github.com/mkdocs/mkdocs/discussions/4010
-  [live-reload problems]: https://github.com/squidfunk/mkdocs-material/issues/8478
+  [live-reload problems]: https://github.com/mkdocs-ng/mkdocs-material/issues/8478
 
 ## What this means for you
 
