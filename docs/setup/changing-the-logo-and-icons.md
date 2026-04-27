@@ -103,7 +103,7 @@ The following is a complete list of customizable icons used by the theme:
 | `previous`   | Previous page in footer, hide search on mobile                                |
 | `next`       | Next page in footer                                                           |
 
-  [Site icon support]: https://github.com/squidfunk/mkdocs-material/releases/tag/9.2.0
+  [Site icon support]: https://github.com/mkdocs-ng/mkdocs-material/releases/tag/9.2.0
 
 ## Customization
 
@@ -161,6 +161,6 @@ However, note that the syntaxes are slightly different:
 For further notes on icon usage, please consult the [icon reference].
 
   [extend the theme]: ../customization.md#extending-the-theme
-  [custom_dir]: https://www.mkdocs.org/user-guide/configuration/#custom_dir
+  [custom_dir]: https://mkdocs-ng.github.io/mkdocs/user-guide/configuration/#custom_dir
   [Bootstrap]: https://icons.getbootstrap.com/
   [icon reference]: ../reference/icons-emojis.md#using-icons

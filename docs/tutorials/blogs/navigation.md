@@ -155,7 +155,7 @@ them accessible independently of the main navigation structure. Tags are useful
 for making related content easily discoverable even if it is in different parts
 of the navigation hierarchy.
 
-[Tags plugin]: https://squidfunk.github.io/mkdocs-material/plugins/tags/
+[Tags plugin]: https://mkdocs-ng.github.io/mkdocs-material/plugins/tags/
 
 You may have a tutorial like this one as well as a more comprehensive setup guide
 and reference documentation. Adding the same tag to all three shows that they
@@ -302,10 +302,10 @@ the page header.
         name: Team
         description: Creator
         avatar: https://simpleicons.org/icons/materialformkdocs.svg
-      squidfunk:
+      mkdocs-ng:
         name: Martin Donath
         description: Creator
-        avatar: https://github.com/squidfunk.png
+        avatar: https://github.com/mkdocs-ng.png
     ```
 
     and then add a line to the header of the first post:

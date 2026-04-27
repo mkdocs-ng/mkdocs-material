@@ -26,7 +26,7 @@ developing built-in plugins, we always adhere to the following design principles
   builds. This is particularly important for large documentation projects with
   thousands of pages.
 
-  [mkdocs]: https://www.mkdocs.org/
+  [mkdocs]: https://mkdocs-ng.github.io/mkdocs/
   [design principles]: ../design-principles.md
   [offline-capable documentation]: ../setup/building-for-offline-usage.md
 

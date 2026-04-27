@@ -1,7 +1,7 @@
 ---
 title: Adding a badge to your project
 date: 2023-11-30
-authors: [squidfunk]
+authors: [mkdocs-ng]
 slug: adding-a-badge-to-your-project
 description: >
   Share the love – you can now add a badge to your README, showing that your
@@ -29,7 +29,7 @@ you can add to your project's README:
 Just copy the following snippet and paste it into your project's `README.md`:
 
 ``` markdown
-[![Built with Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/)
+[![Built with Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white)](https://mkdocs-ng.github.io/mkdocs-material/)
 ```
 
   [Simple Icons]: https://simpleicons.org/

@@ -581,7 +581,7 @@ Merged Insiders features of 'Goat's Horn' funding goal
 - Fixed #6094: Blog post metadata overlaps with footer on small screens
 - Fixed #6069: Blog plugin crashes for categories with non-ASCII names
 
-__Updated templates__ ([diff](https://github.com/squidfunk/mkdocs-material/compare/9.4.2...9.4.3))
+__Updated templates__ ([diff](https://github.com/mkdocs-ng/mkdocs-material/compare/9.4.2...9.4.3))
 
 - `base.html`
 
@@ -601,7 +601,7 @@ __Updated templates__ ([diff](https://github.com/squidfunk/mkdocs-material/compa
 - Fixed #5954: Repeated click on anchor ignored when using instant navigation
 - Fixed #5742: Keyboard navigation broken when using instant navigation
 
-__Updated templates__ ([diff](https://github.com/squidfunk/mkdocs-material/compare/9.4.1...9.4.2))
+__Updated templates__ ([diff](https://github.com/mkdocs-ng/mkdocs-material/compare/9.4.1...9.4.2))
 
 - `partials/nav-item.html`
 - `blog-post.html`
@@ -1022,7 +1022,7 @@ __Fixes__
 
 ### 8.5.11 <small>November 30, 2022</small> { id="8.5.11" }
 
-- Let it snow, see https://x.com/squidfunk/status/1597939243090788352
+- Let it snow, see https://x.com/mkdocs-ng/status/1597939243090788352
 
 ### 8.5.10 <small>November 11, 2022</small> { id="8.5.10" }
 

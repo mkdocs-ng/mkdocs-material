@@ -22,7 +22,7 @@ as defined in the page's content.
 
     __If you're considering the typeset plugin, please be aware that known issues will <u>not</u> be fixed.__
 
-  [Material for MkDocs is in maintenance mode]: https://github.com/squidfunk/mkdocs-material/issues/8523
+  [Material for MkDocs is in maintenance mode]: https://github.com/mkdocs-ng/mkdocs-material/issues/8523
   [Zensical]: ../blog/posts/zensical.md
   [Insiders]: ../insiders/index.md
 

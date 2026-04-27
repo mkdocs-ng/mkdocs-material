@@ -98,7 +98,7 @@ To publish your site on a custom domain, please refer to the [MkDocs documentati
   [publishing source branch]: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
   [manual page]: https://man7.org/linux/man-pages/man1/date.1.html
   [caching]: plugins/requirements/caching.md
-  [MkDocs documentation]: https://www.mkdocs.org/user-guide/deploying-your-docs/#custom-domains
+  [MkDocs documentation]: https://mkdocs-ng.github.io/mkdocs/user-guide/deploying-your-docs/#custom-domains
 
 ### with MkDocs
 
@@ -114,8 +114,8 @@ This will build your documentation and deploy it to a branch
 documentation] for more information. For a description of the
 arguments, see [the documentation for the command].
 
-  [this overview in the MkDocs documentation]: https://www.mkdocs.org/user-guide/deploying-your-docs/#project-pages
-  [the documentation for the command]: https://www.mkdocs.org/user-guide/cli/#mkdocs-gh-deploy
+  [this overview in the MkDocs documentation]: https://mkdocs-ng.github.io/mkdocs/user-guide/deploying-your-docs/#project-pages
+  [the documentation for the command]: https://mkdocs-ng.github.io/mkdocs/user-guide/cli/#mkdocs-gh-deploy
 
 ## GitLab Pages
 

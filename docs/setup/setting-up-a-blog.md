@@ -293,14 +293,14 @@ post with one or multiple [authors]. First, create the
 
 ``` yaml
 authors:
-  squidfunk:
+  mkdocs-ng:
     name: Martin Donath
     description: Creator
-    avatar: https://github.com/squidfunk.png
+    avatar: https://github.com/mkdocs-ng.png
 ```
 
 The [`.authors.yml`][authors_file] file associates each author with an
-identifier (in this example `squidfunk`), which can then be used in posts.
+identifier (in this example `mkdocs-ng`), which can then be used in posts.
 Different attributes can be configured. For a list of all possible attributes,
 please consult the [`authors_file`][authors_file] documentation.
 
@@ -313,7 +313,7 @@ each post, as well as in post excerpts on index pages:
 ---
 date: 2024-01-31
 authors:
-  - squidfunk
+  - mkdocs-ng
     ...
 ---
 
@@ -568,7 +568,7 @@ authors, and add a `.meta.yml` file to set common properties:
 
     ``` yaml
     authors:
-      - squidfunk
+      - mkdocs-ng
     categories:
       - Hello
       - World

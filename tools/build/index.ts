@@ -395,7 +395,7 @@ const index$ = zip(icons$, emojis$)
       const cdn = "https://raw.githubusercontent.com"
       return {
         icons: {
-          base: `${cdn}/squidfunk/mkdocs-material/master/material/templates/.icons/`,
+          base: `${cdn}/mkdocs-ng/mkdocs-material/main/material/templates/.icons/`,
           data: Object.fromEntries(icons)
         },
         emojis: {
@@ -446,7 +446,7 @@ const schema$ = merge(
         "$schema": "https://json-schema.org/draft-07/schema",
         "title": "Icon",
         "markdownDescription": [
-          "https://squidfunk.github.io/mkdocs-material",
+          "https://mkdocs-ng.github.io/mkdocs-material",
           "reference/icons-emojis/#search"
         ].join("/"),
         "type": "string",

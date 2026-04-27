@@ -31,10 +31,10 @@ title: Lorem ipsum dolor sit amet # (1)!
     dash.
 
   [social cards]: ../setup/setting-up-social-cards.md
-  [four step process]: https://www.mkdocs.org/user-guide/writing-your-docs/#meta-data
+  [four step process]: https://mkdocs-ng.github.io/mkdocs/user-guide/writing-your-docs/#meta-data
   [title]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title
   [head]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head
-  [site_name]: https://www.mkdocs.org/user-guide/configuration/#site_name
+  [site_name]: https://mkdocs-ng.github.io/mkdocs/user-guide/configuration/#site_name
 
 ### Setting the page `description`
 
@@ -55,7 +55,7 @@ description: Nullam urna elit, malesuada eget finibus ut, ac tortor. # (1)!
 1.  This line sets the `meta` tag containing the description inside the
     document `head` for the current page to the provided value.
 
-  [site_description]: https://www.mkdocs.org/user-guide/configuration/#site_description
+  [site_description]: https://mkdocs-ng.github.io/mkdocs/user-guide/configuration/#site_description
 
 ### Setting the page `icon`
 

@@ -90,9 +90,9 @@ jobs:
       #   env:
       #     GH_TOKEN: ${{ secrets.GH_TOKEN }}
       #   run: |
-      #     # Warning: this method is used only for squidfunk/mkdocs-material
+      #     # Warning: this method is used only for mkdocs-ng/mkdocs-material
       #     # documentation builds. For your own site, see the publishing guide.
-      #     git clone --depth 1 https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git
+      #     git clone --depth 1 https://${GH_TOKEN}@github.com/mkdocs-ng/mkdocs-material-insiders.git
       #     pip install -e mkdocs-material-insiders
       #     cp mkdocs-material-insiders/mkdocs.yml mkdocs.yml
       #     rm -rf material

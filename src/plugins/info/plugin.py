@@ -80,12 +80,12 @@ class InfoPlugin(BasePlugin[InfoConfig]):
             return
 
         # Resolve latest version
-        url = "https://github.com/squidfunk/mkdocs-material/releases/latest"
+        url = "https://github.com/mkdocs-ng/mkdocs-material/releases/latest"
         res = requests.get(url, allow_redirects = False)
 
         # Check if we're running the latest version
         _, current = res.headers.get("location").rsplit("/", 1)
-        present = version("mkdocs-material")
+        present = version("mkdocs-ng-material")
         if not present.startswith(current):
             log.error("Please upgrade to the latest version.")
             self._help_on_versions_and_exit(present, current)
@@ -375,7 +375,7 @@ class InfoPlugin(BasePlugin[InfoConfig]):
         print(Style.NORMAL)
         print(f"  Please update from {have} to {need}.")
         print(Style.RESET_ALL)
-        print(f"  pip install --upgrade --force-reinstall mkdocs-material")
+        print(f"  pip install --upgrade --force-reinstall mkdocs-ng-material")
         print(Style.NORMAL)
 
         # Exit, unless explicitly told not to

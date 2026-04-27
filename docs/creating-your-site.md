@@ -103,7 +103,7 @@ plugins require the `site_url` to be set, so you should always do this.
     If you already have a schema defined, or wish to self-host your schema to
     reduce duplication, you can add it via [$ref].
 
-  [configuration validation and auto-complete]: https://x.com/squidfunk/status/1487746003692400642
+  [configuration validation and auto-complete]: https://x.com/mkdocs-ng/status/1487746003692400642
   [schema.json]: schema.json
   [vscode-yaml]: https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml
   [settings.json]: https://code.visualstudio.com/docs/getstarted/settings
@@ -226,7 +226,7 @@ Point your browser to [localhost:8000][live preview] and you should see:
 
 [![Creating your site]][Creating your site]
 
-  [--dirtyreload]: https://www.mkdocs.org/about/release-notes/#support-for-dirty-builds-990
+  [--dirtyreload]: https://mkdocs-ng.github.io/mkdocs/about/release-notes/#support-for-dirty-builds-990
   [live preview]: http://localhost:8000
   [Creating your site]: assets/screenshots/creating-your-site.png
 

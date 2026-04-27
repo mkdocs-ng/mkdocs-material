@@ -1,6 +1,6 @@
 ---
 date: 2023-10-02
-authors: [squidfunk, alexvoss]
+authors: [mkdocs-ng, alexvoss]
 categories:
   - General
 ---
@@ -18,8 +18,8 @@ allow to ask the community for support and to discuss ideas and issues. In the
 past weeks, we have begun to question whether this duplication is in the best
 interest of our project. This post explains the rationale behind our decision.
 
-  [Gitter]: https://gitter.im/squidfunk/mkdocs-material
-  [GitHub discussions]: https://github.com/squidfunk/mkdocs-material/discussions
+  [Gitter]: https://gitter.im/mkdocs-ng/mkdocs-material
+  [GitHub discussions]: https://github.com/mkdocs-ng/mkdocs-material/discussions
 
 <!-- more -->
 

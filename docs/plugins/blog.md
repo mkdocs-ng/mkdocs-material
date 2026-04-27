@@ -1085,12 +1085,12 @@ The provided path is resolved from the [`docs` directory][mkdocs.docs_dir].
     ```
 
     Note that `<author>` must be set to an identifier for associating authors
-    with posts, e.g., a GitHub username like `squidfunk`. This identifier can
+    with posts, e.g., a GitHub username like `mkdocs-ng`. This identifier can
     then be used in the [`authors`][meta.authors] metadata property of
     a post. Multiple authors are supported. As an example, see
     [the `.authors.yml` file][.authors.yml] we're using for our blog.
 
-  [.authors.yml]: https://github.com/squidfunk/mkdocs-material/blob/main/docs/blog/.authors.yml
+  [.authors.yml]: https://github.com/mkdocs-ng/mkdocs-material/blob/main/docs/blog/.authors.yml
 
 ---
 
@@ -1457,7 +1457,7 @@ author can't be resolved, the plugin will terminate with an error:
 ``` yaml
 ---
 authors:
-  - squidfunk # (1)!
+  - mkdocs-ng # (1)!
 ---
 
 # Post title
@@ -1718,6 +1718,6 @@ Slugs are passed to [`post_url_format`][config.post_url_format].
     ask a question, or create a [change request] on our [issue tracker], so we
     can find out if it might be a good fit for the plugin.
 
-  [open a discussion]: https://github.com/squidfunk/mkdocs-material/discussions
+  [open a discussion]: https://github.com/mkdocs-ng/mkdocs-material/discussions
   [change request]: ../contributing/requesting-a-change.md
-  [issue tracker]: https://github.com/squidfunk/mkdocs-material/issues
+  [issue tracker]: https://github.com/mkdocs-ng/mkdocs-material/issues

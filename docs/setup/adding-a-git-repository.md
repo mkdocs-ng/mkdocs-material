@@ -35,7 +35,7 @@ automatically requested and rendered.
     sorted by update time], the [equivalent API endpoint] is used. So, make sure
     you also [create a release for GitLab repositories].
 
-  [repo_url]: https://www.mkdocs.org/user-guide/configuration/#repo_url
+  [repo_url]: https://mkdocs-ng.github.io/mkdocs/user-guide/configuration/#repo_url
   [latest release]: https://docs.github.com/en/rest/reference/releases#get-the-latest-release
   [create a release]: https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository#creating-a-release
   [list of tags sorted by update time]: https://docs.gitlab.com/ee/api/tags.html#list-project-repository-tags
@@ -55,7 +55,7 @@ _repository name_ automatically. If you wish to customize the name, set
 repo_name: mkdocs-ng/mkdocs-material
 ```
 
-  [repo_name]: https://www.mkdocs.org/user-guide/configuration/#repo_name
+  [repo_name]: https://mkdocs-ng.github.io/mkdocs/user-guide/configuration/#repo_name
 
 #### Repository icon
 
@@ -155,8 +155,8 @@ theme:
   [GitHub]: https://github.com/
   [GitLab]: https://about.gitlab.com/
   [Bitbucket]: https://bitbucket.org/
-  [MkDocs]: https://www.mkdocs.org
-  [edit_uri]: https://www.mkdocs.org/user-guide/configuration/#edit_uri
+  [MkDocs]: https://mkdocs-ng.github.io/mkdocs
+  [edit_uri]: https://mkdocs-ng.github.io/mkdocs/user-guide/configuration/#edit_uri
 
 ### Revisioning
 
@@ -322,7 +322,7 @@ by Material for MkDocs, which is why they may yield unexpected results. Use
 them at your own risk.
 
   [git-committers]: https://github.com/ojacques/mkdocs-git-committers-plugin-2
-  [environment variable]: https://www.mkdocs.org/user-guide/configuration/#environment-variables
+  [environment variable]: https://mkdocs-ng.github.io/mkdocs/user-guide/configuration/#environment-variables
   [rate limits]: https://docs.github.com/en/rest/overview/resources-in-the-rest-api#rate-limiting
 
 #### Document authors

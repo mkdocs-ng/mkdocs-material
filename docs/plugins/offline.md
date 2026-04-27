@@ -33,7 +33,7 @@ Cross origin requests are only supported for protocol schemes: http, [...]
 While browsers impose those restriction for security reasons, it reduces the
 interactivity of your project. The offline plugin makes sure that site search
 keeps working by moving the search index to a JavaScript file, and leveraging
-@squidfunk's [iframe-worker] shim.
+@mkdocs-ng's [iframe-worker] shim.
 
 Additionally, the plugin automatically disables the [`use_directory_urls`]
 [mkdocs.use_directory_urls] setting, ensuring that users can open your
@@ -43,7 +43,7 @@ There are some [limitations].
 
   [building your project]: ../creating-your-site.md#building-your-site
   [Fetch API]: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
-  [iframe-worker]: https://github.com/squidfunk/iframe-worker
+  [iframe-worker]: https://github.com/mkdocs-ng/iframe-worker
   [limitations]: #limitations
 
 ### When to use it

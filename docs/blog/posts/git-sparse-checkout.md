@@ -1,6 +1,6 @@
 ---
 date: 2023-09-22
-authors: [squidfunk]
+authors: [mkdocs-ng]
 categories:
   - Build
   - Performance

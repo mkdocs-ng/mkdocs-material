@@ -1,9 +1,9 @@
 authors:
-  squidfunk:
-    name: Martin Donath
-    description: Creator
+  mkdocs-ng:
+    name: MkDocs NG Team
+    description: Maintainer
     avatar: https://avatars.githubusercontent.com/u/932156
-    url: https://github.com/squidfunk
+    url: https://github.com/mkdocs-ng
   alexvoss:
     name: Alex Voss
     description: Solutions Architect

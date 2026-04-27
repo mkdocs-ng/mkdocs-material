@@ -1,6 +1,6 @@
 ---
 date: 2021-09-13
-authors: [squidfunk]
+authors: [mkdocs-ng]
 readtime: 15
 description: >
   How we rebuilt client-side search, delivering a better user experience while
@@ -166,7 +166,7 @@ search experience for theme authors, which is why Material for MkDocs (up to
 now) did some [monkey patching] to be able to render slightly more
 meaningful search previews.
 
-  [monkey patching]: https://github.com/squidfunk/mkdocs-material/blob/ec7ccd2b2d15dd033740f388912f7be7738feec2/src/assets/javascripts/integrations/search/document/index.ts#L68-L71
+  [monkey patching]: https://github.com/mkdocs-ng/mkdocs-material/blob/ec7ccd2b2d15dd033740f388912f7be7738feec2/src/assets/javascripts/integrations/search/document/index.ts#L68-L71
 
 ### Search worker
 
@@ -207,8 +207,8 @@ into and out of the index.
 
   [separator]: ../../plugins/search.md#config.separator
   [default tokenizer]: https://github.com/olivernn/lunr.js/blob/aa5a878f62a6bba1e8e5b95714899e17e8150b38/lunr.js#L413-L456
-  [post-processed]: https://github.com/squidfunk/mkdocs-material/blob/ec7ccd2b2d15dd033740f388912f7be7738feec2/src/assets/javascripts/integrations/search/_/index.ts#L249-L272
-  [rescored]: https://github.com/squidfunk/mkdocs-material/blob/ec7ccd2b2d15dd033740f388912f7be7738feec2/src/assets/javascripts/integrations/search/_/index.ts#L274-L275
+  [post-processed]: https://github.com/mkdocs-ng/mkdocs-material/blob/ec7ccd2b2d15dd033740f388912f7be7738feec2/src/assets/javascripts/integrations/search/_/index.ts#L249-L272
+  [rescored]: https://github.com/mkdocs-ng/mkdocs-material/blob/ec7ccd2b2d15dd033740f388912f7be7738feec2/src/assets/javascripts/integrations/search/_/index.ts#L274-L275
 
 ### Search previews
 
@@ -261,7 +261,7 @@ carefully considered:
     China and Japan are both within the top 5 countries of origin of users of
     Material for MkDocs.
 
-  [truncated]: https://github.com/squidfunk/mkdocs-material/blob/main/src/templates/assets/javascripts/templates/search/index.tsx#L90
+  [truncated]: https://github.com/mkdocs-ng/mkdocs-material/blob/main/src/templates/assets/javascripts/templates/search/index.tsx#L90
   [search preview]: search-better-faster-smaller/search-preview.png
   [Just the Docs]: https://just-the-docs.com
   [Docusaurus]: https://github.com/lelouch77/docusaurus-lunr-search
@@ -435,7 +435,7 @@ explain the remainder of the regular expression.[^4]
     multiple characters were never supported by
     [lunr's default tokenizer][default tokenizer].
 
-  [default value]: https://www.mkdocs.org/user-guide/configuration/#separator
+  [default value]: https://mkdocs-ng.github.io/mkdocs/user-guide/configuration/#separator
 
 #### Case changes
 
@@ -543,7 +543,7 @@ powerful as tokenization:
     see, for example, the results of
     [:octicons-search-24: twitter][q=twitter].
 
-  [regular expressions]: https://github.com/squidfunk/mkdocs-material/blob/ec7ccd2b2d15dd033740f388912f7be7738feec2/src/assets/javascripts/integrations/search/highlighter/index.ts#L61-L91
+  [regular expressions]: https://github.com/mkdocs-ng/mkdocs-material/blob/ec7ccd2b2d15dd033740f388912f7be7738feec2/src/assets/javascripts/integrations/search/highlighter/index.ts#L61-L91
   [dedicated segmenter]: http://chasen.org/~taku/software/TinySegmenter/
   [new tokenization approach]: #tokenizer-lookahead
   [case changes]: #case-changes
@@ -626,4 +626,4 @@ for MkDocs! This is the first blog article that I decided to write after a
 short [Twitter survey] made me to. You're invited to leave a comment
 to share your experiences with the new search implementation.
 
-  [X survey]: https://x.com/squidfunk/status/1434477478823743488
+  [X survey]: https://x.com/mkdocs-ng/status/1434477478823743488
