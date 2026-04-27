@@ -43,11 +43,11 @@ jobs:
       - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV # (3)!
       - uses: actions/cache@v4
         with:
-          key: mkdocs-material-${{ env.cache_id }}
+          key: mkdocs-ng-material-${{ env.cache_id }}
           path: ~/.cache # (4)!
           restore-keys: |
-            mkdocs-material-
-      - run: pip install mkdocs-material # (5)!
+            mkdocs-ng-material-
+      - run: pip install mkdocs-ng-material # (5)!
       - run: mkdocs gh-deploy --force
 ```
 
@@ -129,7 +129,7 @@ pages:
   stage: deploy
   image: python:latest
   script:
-    - pip install mkdocs-material
+    - pip install mkdocs-ng-material
     - mkdocs build --site-dir public
   cache:
     key: ${CI_COMMIT_REF_SLUG}
