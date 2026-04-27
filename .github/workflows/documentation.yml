@@ -24,6 +24,11 @@ on:
     branches:
       - main
 
+# Prevent multiple overlapping workflow runs from creating duplicate artifacts
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
 env:
   PYTHON_VERSION: 3.x
 
@@ -33,7 +38,7 @@ permissions:
   pages: write
 
 jobs:
-  documentation:
+  build:
     name: Build documentation
     runs-on: ubuntu-latest
     steps:
@@ -112,11 +117,20 @@ jobs:
         with:
           path: site
 
-      - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v4
-
       - name: Save build cache
         uses: actions/cache/save@v4
         with:
           key: mkdocs-ng-material-${{ hashfiles('.cache/**') }}
           path: ~/.cache
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
