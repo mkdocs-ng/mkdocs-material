@@ -1,3 +1,13 @@
+mkdocs-ng-material-9.7.7 (2026-04-27)
+
+  * First release of the mkdocs-ng fork
+  * Upstream entered maintenance mode; fork continues active development
+    See https://github.com/squidfunk/mkdocs-material/issues/8523
+  * Rebranded as mkdocs-ng-material under the mkdocs-ng ecosystem
+  * Updated all documentation links and references for the new project home
+  * Added release drafter and PR autolabeler workflows
+  * Fixed documentation build workflow for the mkdocs-ng organization
+
 mkdocs-material-9.7.6 (2026-03-19)
 
   * Automatically disable MkDocs 2.0 warning for forks of MkDocs

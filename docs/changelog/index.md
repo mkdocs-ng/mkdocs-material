@@ -4,6 +4,16 @@
 
 ### 9.7.7 <small>April 27, 2026</small> { id="9.7.7" }
 
+!!! info "First release of the mkdocs-ng fork"
+
+    [Upstream Material for MkDocs entered maintenance mode][issue-8523] on
+    November 11, 2025, and will no longer receive new features or bug fixes
+    beyond critical security updates. This fork continues active development
+    under the [mkdocs-ng] organization to keep the project alive and evolving.
+
+    [issue-8523]: https://github.com/squidfunk/mkdocs-material/issues/8523
+    [mkdocs-ng]: https://github.com/mkdocs-ng
+
 - Rebranded as mkdocs-ng-material under the mkdocs-ng ecosystem
 - Updated all documentation links and references for the new project home
 - Added release drafter and PR autolabeler workflows
