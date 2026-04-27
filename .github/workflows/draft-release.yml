@@ -1,0 +1,87 @@
+name: Draft Release Notes
+
+on:
+  push:
+    branches:
+      - "main"
+    paths:
+      - "docs/changelog/index.md"
+    tags:
+      - "[0-9]+.[0-9]+.[0-9]+*"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync-release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Extract latest changelog entry
+        id: changelog
+        run: |
+          python3 .github/scripts/extract-changelog.py > /tmp/changelog.json
+
+      - name: Parse version and date
+        id: meta
+        run: |
+          VERSION=$(python3 -c "import json; print(json.load(open('/tmp/changelog.json'))['version'])")
+          DATE=$(python3 -c "import json; print(json.load(open('/tmp/changelog.json'))['date'])")
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+          echo "date=$DATE" >> "$GITHUB_OUTPUT"
+
+      - name: Set tag and draft flag
+        id: flags
+        run: |
+          if [[ "${{ github.ref_type }}" == "tag" ]]; then
+            echo "tag=${{ github.ref_name }}" >> "$GITHUB_OUTPUT"
+            echo "draft=false" >> "$GITHUB_OUTPUT"
+            echo "make_latest=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "tag=${{ steps.meta.outputs.version }}" >> "$GITHUB_OUTPUT"
+            echo "draft=true" >> "$GITHUB_OUTPUT"
+            echo "make_latest=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Write release notes to file
+        run: |
+          python3 -c "
+          import json
+          with open('/tmp/changelog.json') as f:
+              data = json.load(f)
+          with open('/tmp/release-body.md', 'w') as f:
+              f.write(data['body'])
+          "
+
+      - name: Create or update GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TAG="${{ steps.flags.outputs.tag }}"
+          TITLE="${{ steps.meta.outputs.version }} – ${{ steps.meta.outputs.date }}"
+          NOTES_FILE="/tmp/release-body.md"
+          DRAFT="${{ steps.flags.outputs.draft }}"
+          MAKE_LATEST="${{ steps.flags.outputs.make_latest }}"
+
+          ARGS=(
+            --title "$TITLE"
+            --notes-file "$NOTES_FILE"
+          )
+
+          if [[ "$DRAFT" == "true" ]]; then
+            ARGS+=(--draft)
+          fi
+
+          if [[ "$MAKE_LATEST" == "true" ]]; then
+            ARGS+=(--latest)
+          fi
+
+          if gh release view "$TAG" &>/dev/null; then
+            echo "Release $TAG exists – editing"
+            gh release edit "$TAG" "${ARGS[@]}"
+          else
+            echo "Release $TAG does not exist – creating"
+            gh release create "$TAG" "${ARGS[@]}"
+          fi
