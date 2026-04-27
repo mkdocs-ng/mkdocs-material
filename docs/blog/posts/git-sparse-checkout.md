@@ -89,7 +89,7 @@ jobs:
       - uses: actions/setup-python@v4
         with:
           python-version: 3.x
-      - run: pip install mkdocs-material
+      - run: pip install mkdocs-ng-material
       - run: mkdocs gh-deploy --force
 ```
 

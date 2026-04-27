@@ -2,6 +2,13 @@
 
 ## Material for MkDocs
 
+### 9.7.7 <small>April 27, 2026</small> { id="9.7.7" }
+
+- Rebranded as mkdocs-ng-material under the mkdocs-ng ecosystem
+- Updated all documentation links and references for the new project home
+- Added release drafter and PR autolabeler workflows
+- Fixed documentation build workflow for the mkdocs-ng organization
+
 ### 9.7.6 <small>March 19, 2026</small> { id="9.7.6" }
 
 - Automatically disable MkDocs 2.0 warning for forks of MkDocs

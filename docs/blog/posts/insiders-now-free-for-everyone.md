@@ -134,7 +134,7 @@ Thus, please adjust your `requirements.txt` and GitHub Actions workflows:
 
 ```diff
 - pip install git+https://${GH_TOKEN}@github.com/mkdocs-ng/mkdocs-material-insiders. git
-+ pip install mkdocs-material
++ pip install mkdocs-ng-material
 
 ```
 
