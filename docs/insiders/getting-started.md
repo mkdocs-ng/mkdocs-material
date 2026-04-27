@@ -50,7 +50,6 @@ Make sure you have the `GH_TOKEN` variable set as instructed above.
     end of the URL with the one you want.
 
     ``` sh
-    pip install git+https://${GH_TOKEN}@github.com/mkdocs-ng/mkdocs-material-insiders.git@9.4.2-insiders-4.42.0
     ```
 
 === "Latest"
