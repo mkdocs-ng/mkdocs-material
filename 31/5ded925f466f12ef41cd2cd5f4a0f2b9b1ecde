@@ -1,0 +1,23 @@
+.github/workflows/build.yml
+  s_16bea91c23b504::t_b993049a165ed4 114-119
+material/templates/base.html
+  s_16bea91c23b504::t_5259727963cf11 40
+src/templates/base.html
+  s_16bea91c23b504::t_8f1401ff7417d0 96
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "315ded925f466f12ef41cd2cd5f4a0f2b9b1ecde",
+  "prompts": {},
+  "sessions": {
+    "s_16bea91c23b504": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bc6be01c-87db-438a-bd18-a9aa8a978bfe",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Xianpeng Shen <xianpeng.shen@gmail.com>"
+    }
+  }
+}
