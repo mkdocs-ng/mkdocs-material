@@ -348,7 +348,6 @@ const templates$ = manifest$
             .replace(/^\s*[\r\n]/gm, "")
 
             /* Write theme version into template */
-            .replace("$md-name$", metadata.name)
             .replace("$md-version$", metadata.version)
           )
       }

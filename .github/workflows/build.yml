@@ -111,6 +111,12 @@ jobs:
       - name: Set up Python dependencies
         run: pip install --upgrade build twine
 
+      - name: Check theme version
+        run: |
+          version=$(python -c "import json; print(json.load(open('package.json'))['version'])")
+          grep -F "__version__ = \"$version\"" material/__init__.py
+          grep -F "mkdocs-material-$version\"" material/templates/base.html
+
       - name: Build Python package
         run: python -m build
 
