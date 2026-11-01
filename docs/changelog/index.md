@@ -9,6 +9,12 @@
     Brings in the security fixes of upstream Material for MkDocs 9.7.7 and
     9.8.0. We recommend upgrading and updating your lockfiles.
 
+- Installing a plugin that depends on upstream `mkdocs-material`, such as
+  `mkdocs-techdocs-core`, no longer overwrites mkdocs-ng-material. The theme
+  now installs to `site-packages/mkdocs_ng_material/material/`, and a startup
+  hook (`mkdocs_ng_material.pth`, or `mkdocs_ng_material.start` on Python
+  3.15+) makes `import material` load it, in any install order. Leave the
+  upstream package installed if a plugin pulled it in.
 - Fixed DOM-based XSS vulnerability in search suggestions (upstream 9.7.7)
 - Raised minimum versions of Python dependencies with known vulnerabilities:
   Jinja2 3.1.6, Markdown 3.8.1, Pygments 2.20.0, PyMdown Extensions 11.0.1,

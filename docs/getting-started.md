@@ -64,6 +64,15 @@ This will automatically install compatible versions of all dependencies:
 MkDocs always strives to support the latest versions, so there's no need to
 install those packages separately.
 
+!!! info "Plugins that depend on upstream Material for MkDocs"
+
+    Some plugins, such as `mkdocs-techdocs-core`, depend on the upstream
+    `mkdocs-material` package, so it gets installed next to
+    mkdocs-ng-material. That's fine: mkdocs-ng-material installs its files
+    separately and always takes precedence, whatever the install order, so
+    leave the upstream package installed. The `generator` meta tag of your
+    built pages shows the version that ran.
+
 ---
 
 :fontawesome-brands-youtube:{ style="color: #EE0F0F" }
