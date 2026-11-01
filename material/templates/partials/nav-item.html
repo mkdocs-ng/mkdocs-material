@@ -52,7 +52,18 @@
     </a>
   {% endif %}
 {% endmacro %}
-{% macro render(nav_item, path, level, parent) %}
+{% macro render(nav_item, path, level, parent) -%}
+  {%- set in_pages = nav_item.pages and page in nav_item.pages -%}
+  {%- if nav_fragment is defined and not in_pages -%}
+    {%- set parent_active = (parent and parent.active) is true -%}
+    {%- call nav_fragment(nav_item, path, level, parent_active) -%}
+      {{- render_item(nav_item, path, level, parent) -}}
+    {%- endcall -%}
+  {%- else -%}
+    {{- render_item(nav_item, path, level, parent) -}}
+  {%- endif -%}
+{%- endmacro %}
+{% macro render_item(nav_item, path, level, parent) %}
   {% set class = "md-nav__item" %}
   {% if nav_item.active %}
     {% set class = class ~ " md-nav__item--active" %}

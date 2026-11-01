@@ -106,8 +106,21 @@
   {% endif %}
 {% endmacro %}
 
+<!-- Render navigation item, once per build if it doesn't contain the page -->
+{% macro render(nav_item, path, level, parent) -%}
+  {%- set in_pages = nav_item.pages and page in nav_item.pages -%}
+  {%- if nav_fragment is defined and not in_pages -%}
+    {%- set parent_active = (parent and parent.active) is true -%}
+    {%- call nav_fragment(nav_item, path, level, parent_active) -%}
+      {{- render_item(nav_item, path, level, parent) -}}
+    {%- endcall -%}
+  {%- else -%}
+    {{- render_item(nav_item, path, level, parent) -}}
+  {%- endif -%}
+{%- endmacro %}
+
 <!-- Render navigation item -->
-{% macro render(nav_item, path, level, parent) %}
+{% macro render_item(nav_item, path, level, parent) %}
 
   <!-- Determine classes -->
   {% set class = "md-nav__item" %}
