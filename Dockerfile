@@ -32,6 +32,8 @@ WORKDIR /tmp
 
 # Copy files necessary for build
 COPY material material
+COPY mkdocs_ng_material mkdocs_ng_material
+COPY mkdocs_ng_material.pth mkdocs_ng_material.start ./
 COPY package.json package.json
 COPY pyproject.toml pyproject.toml
 COPY README.md README.md
@@ -75,11 +77,15 @@ RUN \
 && \
   apk del .build \
 && \
+  MATERIAL=$(python -c "import material, os; print(os.path.dirname(material.__file__))") \
+&& \
+  MKDOCS=$(python -c "import mkdocs, os; print(os.path.dirname(mkdocs.__file__))") \
+&& \
   for theme in mkdocs readthedocs; do \
-    rm -rf ${PACKAGES}/mkdocs/themes/$theme; \
+    rm -rf ${MKDOCS}/themes/$theme; \
     ln -s \
-      ${PACKAGES}/material/templates \
-      ${PACKAGES}/mkdocs/themes/$theme; \
+      ${MATERIAL}/templates \
+      ${MKDOCS}/themes/$theme; \
   done \
 && \
   rm -rf /tmp/* /root/.cache \
