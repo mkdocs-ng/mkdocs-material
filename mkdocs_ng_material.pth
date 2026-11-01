@@ -1,0 +1,4 @@
+# mkdocs-ng-material: make `import material` load mkdocs-ng-material. See
+# mkdocs_ng_material/__init__.py. Python 3.15+ runs mkdocs_ng_material.start
+# instead of the import line (PEP 829).
+import mkdocs_ng_material; mkdocs_ng_material.install()

@@ -100,8 +100,27 @@ fields = ["license", "description", "authors", "keywords", "urls"]
 filename = "requirements.txt"
 
 [tool.hatch.build.targets.wheel]
-include = ["/material"]
+packages = ["material", "mkdocs_ng_material"]
+exclude = ["/material/overrides"]
+# Install the `material` package to site-packages/mkdocs_ng_material/material/,
+# out of the way of the upstream `mkdocs-material` distribution; see
+# mkdocs_ng_material/__init__.py.
+sources = {"material" = "mkdocs_ng_material/material"}
+# Hatch can't map that rewrite for editable installs, so they add the repository
+# root to sys.path instead (and the .pth/.start files still install the hook).
+dev-mode-dirs = ["."]
+
+[tool.hatch.build.targets.wheel.force-include]
+"mkdocs_ng_material.pth" = "mkdocs_ng_material.pth"
+"mkdocs_ng_material.start" = "mkdocs_ng_material.start"
 
 [tool.hatch.build.targets.sdist]
-include = ["/material", "/package.json", "/requirements.txt"]
+include = [
+  "/material",
+  "/mkdocs_ng_material",
+  "/mkdocs_ng_material.pth",
+  "/mkdocs_ng_material.start",
+  "/package.json",
+  "/requirements.txt",
+]
 exclude = ["/material/overrides"]

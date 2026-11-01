@@ -58,6 +58,9 @@ jobs:
             material/plugins
             material/templates
             material/utilities
+            mkdocs_ng_material
+            mkdocs_ng_material.pth
+            mkdocs_ng_material.start
             src/templates/partials/languages
 
       - name: Set up Python runtime

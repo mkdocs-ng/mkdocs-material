@@ -1,5 +1,7 @@
 mkdocs-ng-material-9.8.0 (2026-11-01)
 
+  * Installing a plugin that depends on mkdocs-material no longer overwrites
+    mkdocs-ng-material (it now installs to site-packages/mkdocs_ng_material/)
   * Fixed DOM-based XSS vulnerability in search suggestions (upstream 9.7.7)
   * Raised minimum versions of Python dependencies with known vulnerabilities
   * Raised minimum versions in the imaging and git extras
