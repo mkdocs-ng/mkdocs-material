@@ -113,10 +113,7 @@ export function mountSearchSuggest(
         return words
       })
     )
-      .subscribe(words => el.innerHTML = words
-        .join("")
-        .replace(/\s/g, "&nbsp;")
-      )
+      .subscribe(words => el.textContent = words.join(""))
 
   /* Set up search keyboard handlers */
   keyboard$

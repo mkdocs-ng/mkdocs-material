@@ -37,7 +37,7 @@
         <link rel="alternate" type="application/rss+xml" title="{{ lang.t('rss.updated') }}" href="{{ 'feed_rss_updated.xml' | url }}">
       {% endif %}
       <link rel="icon" href="{{ config.theme.favicon | url }}">
-      <meta name="generator" content="mkdocs-{{ mkdocs_version }}, mkdocs-material-9.7.7">
+      <meta name="generator" content="mkdocs-{{ mkdocs_version }}, mkdocs-material-9.8.0">
     {% endblock %}
     {% block htmltitle %}
       {% if page.meta and page.meta.title %}
@@ -49,10 +49,10 @@
       {% endif %}
     {% endblock %}
     {% block styles %}
-      <link rel="stylesheet" href="{{ 'assets/stylesheets/main.484c7ddc.min.css' | url }}">
+      <link rel="stylesheet" href="{{ 'assets/stylesheets/main.57a0d79d.min.css' | url }}">
       {% if config.theme.palette %}
         {% set palette = config.theme.palette %}
-        <link rel="stylesheet" href="{{ 'assets/stylesheets/palette.ab4e12ef.min.css' | url }}">
+        <link rel="stylesheet" href="{{ 'assets/stylesheets/palette.fb2fffe2.min.css' | url }}">
       {% endif %}
       {% include "partials/icons.html" %}
     {% endblock %}
@@ -242,7 +242,7 @@
             "search.result.term.missing": lang.t("search.result.term.missing"),
             "select.version": lang.t("select.version")
           },
-          "search": "assets/javascripts/workers/search.2c215733.min.js" | url,
+          "search": "assets/javascripts/workers/search.a7633da7.min.js" | url,
           "annotate": _.annotate or none,
           "tags": _.tags or none,
           "version": _.version or none
@@ -250,7 +250,7 @@
       </script>
     {% endblock %}
     {% block scripts %}
-      <script src="{{ 'assets/javascripts/bundle.79ae519e.min.js' | url }}"></script>
+      <script src="{{ 'assets/javascripts/bundle.64ff5bb9.min.js' | url }}"></script>
       {% for script in config.extra_javascript %}
         {{ script | script_tag }}
       {% endfor %}
