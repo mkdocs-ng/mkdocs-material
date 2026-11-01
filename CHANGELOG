@@ -1,3 +1,13 @@
+mkdocs-ng-material-9.8.0 (2026-11-01)
+
+  * Fixed DOM-based XSS vulnerability in search suggestions (upstream 9.7.7)
+  * Raised minimum versions of Python dependencies with known vulnerabilities
+  * Raised minimum versions in the imaging and git extras
+  * Updated Node build-time dependencies to fix vulnerabilities
+  * Python 3.10 or newer is now required, matching mkdocs-ng
+  * Icon search now loads icons from the mkdocs-ng repository
+  * Removed mkdocs-rss-plugin from recommended extra (conflicts with GitPython fix)
+
 mkdocs-ng-material-9.7.7 (2026-04-27)
 
   * First release of the mkdocs-ng fork

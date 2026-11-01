@@ -1,6 +1,6 @@
 {
   "name": "mkdocs-ng-material",
-  "version": "9.7.7",
+  "version": "9.8.0",
   "description": "Documentation that simply works",
   "keywords": [
     "mkdocs",
@@ -67,8 +67,8 @@
     "@typescript-eslint/parser": "^8.52.0",
     "autoprefixer": "^10.4.23",
     "chokidar": "^5.0.0",
-    "cssnano": "5.1.0",
-    "esbuild": "^0.27.2",
+    "cssnano": "^9.9.0",
+    "esbuild": "^0.28.1",
     "eslint": "8.57.0",
     "eslint-plugin-eslint-comments": "^3.2.0",
     "eslint-plugin-import": "^2.32.0",
@@ -96,7 +96,7 @@
     "stylelint-config-recommended": "14.0.1",
     "stylelint-config-standard-scss": "14.0.0",
     "stylelint-scss": "^6.14.0",
-    "svgo": "3.3.3",
+    "svgo": "^3.3.4",
     "tiny-glob": "^0.2.9",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"

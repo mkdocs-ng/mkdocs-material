@@ -2,6 +2,31 @@
 
 ## Material for MkDocs
 
+### 9.8.0 <small>November 1, 2026</small> { id="9.8.0" }
+
+!!! warning "Security release"
+
+    Brings in the security fixes of upstream Material for MkDocs 9.7.7 and
+    9.8.0. We recommend upgrading and updating your lockfiles.
+
+- Fixed DOM-based XSS vulnerability in search suggestions (upstream 9.7.7)
+- Raised minimum versions of Python dependencies with known vulnerabilities:
+  Jinja2 3.1.6, Markdown 3.8.1, Pygments 2.20.0, PyMdown Extensions 11.0.1,
+  Requests 2.33.0
+- Raised minimum versions in the `imaging` extra (Pillow 13.0.0, which needs
+  Python 3.11, and CairoSVG 2.9.1) and added GitPython 3.2.1 to the `git` extra
+- Updated Node build-time dependencies to fix vulnerabilities
+- Python 3.10 or newer is now required, matching mkdocs-ng
+- Icon search now loads icons from the mkdocs-ng repository
+
+- Removed `mkdocs-rss-plugin` from the `recommended` extra: it requires
+  GitPython older than 3.2, which conflicts with the fixed GitPython in the
+  `git` extra. If you use RSS feeds, add the plugin to your own dependencies.
+
+Unlike upstream 9.8.0, this release keeps `mkdocs-redirects` in the
+`recommended` extra, since it works with mkdocs-ng, and does not add the
+upstream end-of-life notice: mkdocs-ng-material is maintained.
+
 ### 9.7.7 <small>April 27, 2026</small> { id="9.7.7" }
 
 !!! info "First release of the mkdocs-ng fork"
