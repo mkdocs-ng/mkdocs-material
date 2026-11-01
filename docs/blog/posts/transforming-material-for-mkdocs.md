@@ -1,7 +1,7 @@
 ---
 date: 2024-08-19
 authors:
-  - mkdocs-ng
+  - squidfunk
   - alexvoss
   - katharinalisalin
 categories:
@@ -119,7 +119,7 @@ We're excited to share more details about this update in one of the next posts i
 
 Supporting multi-language sites in MkDocs is the [most requested feature on our discussion board] and in conversations with users, yet it presents significant challenges, as MkDocs does not natively support it. The same applies to versioning, which also involves synchronisation of multi-project builds. While the MkDocs ecosystem has developed [various plugins and tools] to address these issues, there is still substantial untapped potential. We began exploring these areas but quickly encountered problems that hindered our progress.
 
-  [most requested feature on our discussion board]: https://github.com/mkdocs-ng/mkdocs-material/discussions/2346
+  [most requested feature on our discussion board]: https://github.com/squidfunk/mkdocs-material/discussions/2346
   [various plugins and tools]: https://github.com/mkdocs/catalog?tab=readme-ov-file#-site-building-site-management
 
 As you may know, our initial effort involved the [projects plugin] that aims to extend MkDocs to add support for multi-project environments as a solid foundation to support multi-language sites and versioning. Unfortunately, we encountered significant challenges due to MkDocs' internal architecture and design constraints, which we're working actively on resolving.[^5]
@@ -130,13 +130,13 @@ As you may know, our initial effort involved the [projects plugin] that aims to 
     Implementing multi-project support in MkDocs is particularly challenging due to the lack of an official programmatic API, which complicates efforts to extend its functionality. Moreover, resolving navigation issues before building projects is crucial for ensuring proper interconnectivity. These challenges combined made the development of the projects plugin a complex endeavor.
 
   [projects plugin]: ../../plugins/projects.md
-  [good progress]: https://github.com/mkdocs-ng/mkdocs-material/discussions/5800
+  [good progress]: https://github.com/squidfunk/mkdocs-material/discussions/5800
 
 __:octicons-goal-16: Goal – Enable scaling documentation to any size or team structure by offering seamless methods for integrating multiple documentation projects, whether they involve different languages, versions, or distinct sections of an overall body of work.__
 
 As a result, we are developing a new approach to offer a more comprehensive and robust solution for both multi-language support and versioning. This new approach also intersects with adjacent functionalities like search, as many of our users are interested in [federated search] capabilities that combine results from multiple documentation sites into a unified search interface. Overcoming this challenge is one of the major hurdles we need to address before releasing the new search system.
 
-  [federated search]: https://github.com/mkdocs-ng/mkdocs-material/issues/5230
+  [federated search]: https://github.com/squidfunk/mkdocs-material/issues/5230
 
 ### Editing and collaboration
 
@@ -145,7 +145,7 @@ We had considered developing a live editor in response to MkDocs' [performance i
   [performance issues with large projects]: https://github.com/mkdocs/mkdocs/issues/3695#issuecomment-2093299518
   [proof of concept]: https://x.com/mkdocs-ng/status/1338252230265360391
   [Pyodide]: https://pyodide.org/
-  [generated significant interest]: https://github.com/mkdocs-ng/mkdocs-material/issues/2110
+  [generated significant interest]: https://github.com/squidfunk/mkdocs-material/issues/2110
 
   [^6]:
     Our [proof of concept] supported some features of Material for MkDocs but didn't cover them all. For instance, integrating support for icons or linking between documents would have necessitated reimplementing parts of MkDocs to bypass a full rebuild — something we obviously wanted to avoid. Additionally, certain links, such as those to blog posts generated from schemas, are not merely translated but computed dynamically, which means they cannot be inferred by replacing the `.md` extension with `.html`.
@@ -190,7 +190,7 @@ Almost a year ago, we introduced an [experimental chatbot] on our documentation 
 
 __:octicons-goal-16: Goal – We're envisioning creating a unified interface that seamlessly integrates advanced search, chat, and summarization features, providing an interactive documentation experience.__
 
-  [experimental chatbot]: https://github.com/mkdocs-ng/mkdocs-material/discussions/6240
+  [experimental chatbot]: https://github.com/squidfunk/mkdocs-material/discussions/6240
 
 As we delved into this ambitious project, we gained valuable insights from user feedback. Users began interacting with the chatbot in their native languages, an outcome we hadn't anticipated given that our documentation is in English. Remarkably (or obviously to those that work on LLMs year round), the chatbot responded in the same language. This ability of LLMs is one of the genuinely exciting features of these machine learning models as it has the potential to improve the accessibility of the documentation. However, while we employed state-of-the-art RAG methodologies, the results were mixed, and occasional hallucinations surfaced.
 

@@ -1,7 +1,7 @@
 ---
 date: 2025-11-11
 authors:
-  - mkdocs-ng
+  - squidfunk
   - alexvoss
   - katharinalisalin
   - pawamoy
@@ -34,7 +34,7 @@ _You can subscribe to [our newsletter] to stay in the loop_.
 
   [9.7.0]: ../../changelog/index.md#9.7.0
   [Zensical]: https://zensical.org
-  [maintenance mode]: https://github.com/mkdocs-ng/mkdocs-material/issues/8523
+  [maintenance mode]: https://github.com/squidfunk/mkdocs-material/issues/8523
   [goodbye to GitHub Sponsors]: zensical.md#goodbye-github-sponsors
   [compatibility with Material for MkDocs]: zensical.md#maximum-compatibility
   [Open Source, licensed under MIT]: https://zensical.org/about/license/

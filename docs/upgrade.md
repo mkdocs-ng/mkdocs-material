@@ -92,7 +92,7 @@ changes into your templates. A good starting point is to [inspect the diff].
     - [`content.html`][content.html]
     - [`header.html`][header.html]
 
-  [inspect the diff]: https://github.com/mkdocs-ng/mkdocs-material/pull/4628/files#diff-3ca112736b9164701b599f34780107abf14bb79fe110c478cac410be90899828
+  [inspect the diff]: https://github.com/squidfunk/mkdocs-material/pull/4628/files#diff-3ca112736b9164701b599f34780107abf14bb79fe110c478cac410be90899828
   [MkDocs 1.4.1]: https://github.com/mkdocs/mkdocs/releases/tag/1.4.1
   [in config.plugins]: https://github.com/mkdocs-ng/mkdocs-material/search?q=%22in+config.plugins%22
   [content.html]: https://github.com/mkdocs-ng/mkdocs-material/blob/main/src/templates/partials/content.html
