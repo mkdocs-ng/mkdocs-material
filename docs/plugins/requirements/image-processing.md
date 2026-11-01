@@ -262,7 +262,7 @@ process is different:
   [ubuntu-ldconfig]: https://manpages.ubuntu.com/manpages/focal/en/man8/ldconfig.8.html
   [ubuntu-ld]: https://manpages.ubuntu.com/manpages/xenial/man1/ld.1.html
   [ubuntu-gcc]: https://manpages.ubuntu.com/manpages/trusty/man1/gcc.1.html
-  [cffi-issue]: https://github.com/mkdocs-ng/mkdocs-material/issues/5121
+  [cffi-issue]: https://github.com/squidfunk/mkdocs-material/issues/5121
   [cffi-dopen]: https://github.com/Kozea/cairocffi/blob/f1984d644bbc462ef0ec33b97782cf05733d7b53/cairocffi/__init__.py#L24-L49
   [find-library-macOS]: https://github.com/python/cpython/blob/4d58a1d8fb27048c11bcbda3da1bebf78f979335/Lib/ctypes/util.py#L70-L81
   [find-library-Windows]: https://github.com/python/cpython/blob/4d58a1d8fb27048c11bcbda3da1bebf78f979335/Lib/ctypes/util.py#L59-L67

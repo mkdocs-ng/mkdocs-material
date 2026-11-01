@@ -87,7 +87,7 @@ free._
 
 Making Open Source sustainable is, after all, possible in 2021.
 
-  [the first version]: https://github.com/mkdocs-ng/mkdocs-material/releases/tag/0.1.0
+  [the first version]: https://github.com/squidfunk/mkdocs-material/releases/tag/0.1.0
   [Material for MkDocs 0.1.0]: the-past-present-and-future/mkdocs-material-0.1.0.png
   [Material for MkDocs 0.1.0 Search]: the-past-present-and-future/mkdocs-material-0.1.0-search.png
   [protobluff]: https://github.com/mkdocs-ng/protobluff
@@ -258,6 +258,6 @@ updated.
 __Happy new year!__ :tada:
 
   [Instant previews]: https://x.com/mkdocs-ng/status/1466794654213492743
-  [card grids]: https://github.com/mkdocs-ng/mkdocs-material/issues/3018
-  [under investigation]: https://github.com/mkdocs-ng/mkdocs-material/issues/3353
+  [card grids]: https://github.com/squidfunk/mkdocs-material/issues/3018
+  [under investigation]: https://github.com/squidfunk/mkdocs-material/issues/3353
   [@mkdocs-ng on X]: https://x.com/mkdocs-ng

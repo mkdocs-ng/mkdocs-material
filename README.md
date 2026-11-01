@@ -6,34 +6,45 @@
 
 <p align="center">
   <strong>
-    A powerful documentation framework on top of
-    <a href="https://github.com/mkdocs-ng/mkdocs-ng">mkdocs-ng</a>
+    Material for MkDocs, maintained for
+    <a href="https://github.com/mkdocs-ng/mkdocs">MkDocs NG</a>
   </strong>
 </p>
 
 <p align="center">
-  <em>
-    Community-maintained fork of Material for MkDocs, adapted for the
-    <a href="https://github.com/mkdocs-ng/mkdocs-ng">mkdocs-ng</a> ecosystem.
-  </em>
-</p>
-
-<p align="center">
-  <a href="https://github.com/mkdocs-ng/mkdocs-material/actions"><img
-    src="https://github.com/mkdocs-ng/mkdocs-material/workflows/build/badge.svg"
+  <a href="https://github.com/mkdocs-ng/mkdocs-material/actions/workflows/build.yml"><img
+    src="https://github.com/mkdocs-ng/mkdocs-material/actions/workflows/build.yml/badge.svg"
     alt="Build"
-  /></a>
-  <a href="https://pypistats.org/packages/mkdocs-ng-material"><img
-    src="https://img.shields.io/pypi/dm/mkdocs-ng-material.svg"
-    alt="Downloads"
   /></a>
   <a href="https://pypi.org/project/mkdocs-ng-material"><img
     src="https://img.shields.io/pypi/v/mkdocs-ng-material.svg"
     alt="Python Package Index"
   /></a>
+  <a href="https://pypistats.org/packages/mkdocs-ng-material"><img
+    src="https://img.shields.io/pypi/dm/mkdocs-ng-material.svg"
+    alt="Downloads"
+  /></a>
 </p>
 
+This is a community-maintained fork of [Material for MkDocs] by Martin Donath,
+published on PyPI as `mkdocs-ng-material` and part of the [MkDocs NG] project.
+It exists so that sites built on MkDocs keep getting security and bug fixes.
 
+How it differs from upstream:
+
+- **Security, bug and compatibility fixes.** Upstream fixes are ported as
+  they are released; there are no new features of its own.
+- **Installs alongside upstream.** The theme lives in its own package, so it
+  does not clash with `mkdocs-material` when a plugin pulls that in.
+- **Built on MkDocs NG.** It depends on `mkdocs-ng` and requires Python 3.10
+  or newer.
+- `mkdocs-redirects` stays in the `[recommended]` extra.
+
+Everything else, including configuration and the `material` theme name, is the
+same as upstream, so switching is a one-line change in your requirements.
+
+  [Material for MkDocs]: https://github.com/squidfunk/mkdocs-material
+  [MkDocs NG]: https://github.com/mkdocs-ng
 
 ## Everything you would expect
 
@@ -70,8 +81,8 @@ knowledge to third-party platforms. Retain full control.
 ### Open Source
 
 You're in good company – choose a mature and actively maintained solution built
-with state-of-the-art Open Source technologies, trusted by more than 50,000
-individuals and organizations. Licensed under MIT.
+with state-of-the-art Open Source technologies, used by tens of thousands of
+projects. Licensed under MIT.
 
 ## Quick start
 
@@ -92,93 +103,6 @@ For detailed installation instructions, configuration options, and a demo, visit
 [mkdocs-ng.github.io/mkdocs-material][Material for MkDocs]
 
   [Material for MkDocs]: https://mkdocs-ng.github.io/mkdocs-material/
-
-## Trusted by ...
-
-### ... industry leaders
-
-[ArXiv](https://info.arxiv.org),
-[Atlassian](https://atlassian.github.io/data-center-helm-charts/),
-[AWS](https://aws.github.io/copilot-cli/),
-[Bloomberg](https://bloomberg.github.io/selekt/),
-[CERN](http://abpcomputing.web.cern.ch/),
-[Datadog](https://datadoghq.dev/integrations-core/),
-[Google](https://google.github.io/accompanist/),
-[Harvard](https://informatics.fas.harvard.edu/),
-[Hewlett Packard](https://hewlettpackard.github.io/squest/),
-[HSBC](https://hsbc.github.io/pyratings/),
-[ING](https://ing-bank.github.io/baker/),
-[Intel](https://open-amt-cloud-toolkit.github.io/docs/),
-[JetBrains](https://jetbrains.github.io/projector-client/mkdocs/),
-[LinkedIn](https://linkedin.github.io/school-of-sre/),
-[Microsoft](https://microsoft.github.io/code-with-engineering-playbook/),
-[Mozilla](https://mozillafoundation.github.io/engineering-handbook/),
-[Netflix](https://netflix.github.io/titus/),
-[OpenAI](https://openai.github.io/openai-agents-python/),
-[Red Hat](https://ansible.readthedocs.io/projects/lint/),
-[Roboflow](https://inference.roboflow.com/),
-[Salesforce](https://policy-sentry.readthedocs.io/),
-[SIEMENS](https://opensource.siemens.com/),
-[Slack](https://slackhq.github.io/circuit/),
-[Square](https://square.github.io/okhttp/),
-[Uber](https://uber-go.github.io/fx/),
-[Zalando](https://opensource.zalando.com/skipper/)
-
-### ... and successful Open Source projects
-
-[Amp](https://amp.rs/docs/),
-[Apache Iceberg](https://iceberg.apache.org/),
-[Arduino](https://arduino.github.io/arduino-cli/),
-[Asahi Linux](https://asahilinux.org/docs/),
-[Auto-GPT](https://docs.agpt.co/),
-[AutoKeras](https://autokeras.com/),
-[BFE](https://www.bfe-networks.net/),
-[CentOS](https://docs.infra.centos.org/),
-[Crystal](https://crystal-lang.org/reference/),
-[eBPF](https://ebpf-go.dev/),
-[ejabberd](https://docs.ejabberd.im/),
-[Electron](https://www.electron.build/),
-[FastAPI](https://fastapi.tiangolo.com/),
-[FlatBuffers](https://flatbuffers.dev/),
-[{fmt}](https://fmt.dev/),
-[Freqtrade](https://www.freqtrade.io/en/stable/),
-[GoReleaser](https://goreleaser.com/),
-[GraphRAG](https://microsoft.github.io/graphrag/),
-[Headscale](https://headscale.net/),
-[HedgeDoc](https://docs.hedgedoc.org/),
-[Hummingbot](https://hummingbot.org/),
-[Knative](https://knative.dev/docs/),
-[Kubernetes](https://kops.sigs.k8s.io/),
-[kSQL](https://docs.ksqldb.io/),
-[LeakCanary](https://square.github.io/leakcanary/),
-[LlamaIndex](https://docs.llamaindex.ai/),
-[NetBox](https://netboxlabs.com/docs/netbox/en/stable/),
-[Nokogiri](https://nokogiri.org/),
-[OpenAI](https://openai.github.io/openai-agents-python/),
-[OpenFaaS](https://docs.openfaas.com/),
-[OpenSSL](https://docs.openssl.org/),
-[Orchard Core](https://docs.orchardcore.net/en/latest/),
-[Percona](https://docs.percona.com/percona-monitoring-and-management/),
-[Pi-Hole](https://docs.pi-hole.net/),
-[Polars](https://docs.pola.rs/),
-[Pydantic](https://pydantic-docs.helpmanual.io/),
-[PyPI](https://docs.pypi.org/),
-[Quivr](https://core.quivr.com/),
-[Renovate](https://docs.renovatebot.com/),
-[RetroPie](https://retropie.org.uk/docs/),
-[Ruff](https://docs.astral.sh/ruff/),
-[Supervision](https://supervision.roboflow.com/latest/),
-[Textual](https://textual.textualize.io/),
-[Traefik](https://docs.traefik.io/),
-[Trivy](https://aquasecurity.github.io/trivy/),
-[Typer](https://typer.tiangolo.com/),
-[tinygrad](https://docs.tinygrad.org/),
-[Ultralytics](https://docs.ultralytics.com/),
-[UV](https://docs.astral.sh/uv/),
-[Vapor](https://docs.vapor.codes/),
-[WebKit](https://docs.webkit.org/),
-[WTF](https://wtfutil.com/),
-[ZeroNet](https://zeronet.io/docs/)
 
 ## License
 
