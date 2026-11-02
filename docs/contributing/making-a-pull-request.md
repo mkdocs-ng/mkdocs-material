@@ -336,13 +336,13 @@ shows how your new feature is meant to work.
   repository.
 
 [smoke tests]: https://en.wikipedia.org/wiki/Smoke_testing_(software)
-[minimal reproduction]: https://mkdocs-ng.github.io/mkdocs-material/guides/creating-a-reproduction/
+[minimal reproduction]: https://material.mkdocs-ng.org/guides/creating-a-reproduction/
 [Material for MkDocs Examples]: https://github.com/mkdocs-material/examples
 
 - Ideally, also test the examples in the [examples repository].
 
 [examples repository]: https://github.com/mkdocs-material/examples
-[projects plugin]: https://mkdocs-ng.github.io/mkdocs-material/plugins/projects/
+[projects plugin]: https://material.mkdocs-ng.org/plugins/projects/
 
 ### Creating the pull request
 

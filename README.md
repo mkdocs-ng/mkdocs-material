@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://mkdocs-ng.github.io/mkdocs-material/">
+  <a href="https://material.mkdocs-ng.org/">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/mkdocs-ng/.github/main/assets/mkdocs-ng-logo-dark.svg">
       <img src="https://raw.githubusercontent.com/mkdocs-ng/.github/main/assets/mkdocs-ng-logo.svg" width="120" alt="MkDocs NG">
@@ -106,9 +106,9 @@ theme:
 ```
 
 For detailed installation instructions, configuration options, and a demo, visit
-[mkdocs-ng.github.io/mkdocs-material][docs]
+[material.mkdocs-ng.org][docs]
 
-  [docs]: https://mkdocs-ng.github.io/mkdocs-material/
+  [docs]: https://material.mkdocs-ng.org/
   [Material for MkDocs]: https://github.com/squidfunk/mkdocs-material
 
 ## License

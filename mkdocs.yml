@@ -20,7 +20,7 @@
 
 # Project information
 site_name: MkDocs NG Material
-site_url: https://mkdocs-ng.github.io/mkdocs-material/
+site_url: https://material.mkdocs-ng.org/
 site_author: Martin Donath
 site_description: >-
   Write your documentation in Markdown and create a professional static site in
