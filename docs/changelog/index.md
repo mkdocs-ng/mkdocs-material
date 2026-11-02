@@ -2,6 +2,13 @@
 
 ## Material for MkDocs
 
+### 9.8.1 <small>Unreleased</small> { id="9.8.1" }
+
+- `mkdocs serve` rebuilds faster: the search plugin reuses the index entries
+  of pages that didn't change instead of parsing their HTML again (needs
+  mkdocs-ng 1.11). With 1,000 pages, an edited page shows up after 4.1 seconds
+  instead of 5.9
+
 ### 9.8.0 <small>November 1, 2026</small> { id="9.8.0" }
 
 !!! warning "Security release"
