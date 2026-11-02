@@ -1,14 +1,13 @@
 <p align="center">
   <a href="https://mkdocs-ng.github.io/mkdocs-material/">
-    <img src="https://raw.githubusercontent.com/mkdocs-ng/mkdocs-material/main/.github/assets/logo.svg" width="320" alt="Material for MkDocs">
+    <img src="https://raw.githubusercontent.com/mkdocs-ng/mkdocs-material/main/.github/assets/logo.svg" width="320" alt="MkDocs NG Material">
   </a>
 </p>
 
 <p align="center">
-  <strong>
-    Material for MkDocs, maintained for
-    <a href="https://github.com/mkdocs-ng/mkdocs">MkDocs NG</a>
-  </strong>
+  <strong>MkDocs NG Material</strong><br>
+  Material for MkDocs, maintained for
+  <a href="https://github.com/mkdocs-ng/mkdocs">MkDocs NG</a>
 </p>
 
 <p align="center">
@@ -26,8 +25,9 @@
   /></a>
 </p>
 
-This is a community-maintained fork of [Material for MkDocs] by Martin Donath,
-published on PyPI as `mkdocs-ng-material` and part of the [MkDocs NG] project.
+MkDocs NG Material is a community-maintained fork of [Material for MkDocs] by
+Martin Donath, published on PyPI as `mkdocs-ng-material` and part of the
+[MkDocs NG] project.
 It exists so that sites built on MkDocs keep getting security and bug fixes.
 
 How it differs from upstream:
@@ -106,7 +106,7 @@ For detailed installation instructions, configuration options, and a demo, visit
 
 ## License
 
-This is a community-maintained fork of Material for MkDocs.
+MkDocs NG Material is a community-maintained fork of Material for MkDocs.
 
 **MIT License**
 
