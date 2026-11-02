@@ -37,9 +37,9 @@ def is_mkdocs():
 if is_mkdocs() and not os.getenv("NO_MKDOCS_NG_NOTICE"):
     print(
         "\n"
-        f"{Fore.GREEN} │  ℹ  Notice from the mkdocs-ng Material team{Style.RESET_ALL}\n"
+        f"{Fore.GREEN} │  ℹ  Notice from MkDocs NG Material{Style.RESET_ALL}\n"
         f"{Fore.GREEN} │{Style.RESET_ALL}\n"
-        f"{Fore.GREEN} │{Style.RESET_ALL}  This theme is now maintained as part of the mkdocs-ng ecosystem.\n"
+        f"{Fore.GREEN} │{Style.RESET_ALL}  This theme is now maintained as part of MkDocs NG.\n"
         f"{Fore.GREEN} │{Style.RESET_ALL}  Install: pip install mkdocs-ng-material\n"
         f"{Fore.GREEN} │{Style.RESET_ALL}  Docs: https://mkdocs-ng.github.io/mkdocs-material/\n"
         f"{Fore.GREEN} │{Style.RESET_ALL}  GitHub: https://github.com/mkdocs-ng/mkdocs-material\n"

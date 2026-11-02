@@ -1,8 +1,13 @@
 <p align="center">
   <a href="https://mkdocs-ng.github.io/mkdocs-material/">
-    <img src="https://raw.githubusercontent.com/mkdocs-ng/mkdocs-material/main/.github/assets/logo.svg" width="320" alt="Material for MkDocs">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/mkdocs-ng/.github/main/assets/mkdocs-ng-logo-dark.svg">
+      <img src="https://raw.githubusercontent.com/mkdocs-ng/.github/main/assets/mkdocs-ng-logo.svg" width="120" alt="MkDocs NG">
+    </picture>
   </a>
 </p>
+
+<h1 align="center">MkDocs NG Material</h1>
 
 <p align="center">
   <strong>
@@ -26,9 +31,10 @@
   /></a>
 </p>
 
-This is a community-maintained fork of [Material for MkDocs] by Martin Donath,
-published on PyPI as `mkdocs-ng-material` and part of the [MkDocs NG] project.
-It exists so that sites built on MkDocs keep getting security and bug fixes.
+MkDocs NG Material is a community-maintained fork of [Material for MkDocs] by
+Martin Donath, published on PyPI as `mkdocs-ng-material` and part of the
+[MkDocs NG] project. It exists so that sites built on MkDocs keep getting
+security and bug fixes.
 
 How it differs from upstream:
 
@@ -86,7 +92,7 @@ projects. Licensed under MIT.
 
 ## Quick start
 
-Material for MkDocs can be installed with `pip`:
+MkDocs NG Material can be installed with `pip`:
 
 ``` sh
 pip install mkdocs-ng-material
@@ -100,13 +106,14 @@ theme:
 ```
 
 For detailed installation instructions, configuration options, and a demo, visit
-[mkdocs-ng.github.io/mkdocs-material][Material for MkDocs]
+[mkdocs-ng.github.io/mkdocs-material][docs]
 
-  [Material for MkDocs]: https://mkdocs-ng.github.io/mkdocs-material/
+  [docs]: https://mkdocs-ng.github.io/mkdocs-material/
+  [Material for MkDocs]: https://github.com/squidfunk/mkdocs-material
 
 ## License
 
-This is a community-maintained fork of Material for MkDocs.
+MkDocs NG Material is a community-maintained fork of Material for MkDocs.
 
 **MIT License**
 
