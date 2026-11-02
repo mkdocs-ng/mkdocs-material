@@ -43,7 +43,7 @@ navigation structure based on content.
 
 You can see all these elements on the [Material for MkDocs blog].
 
-[Material for MkDocs blog]: https://mkdocs-ng.github.io/mkdocs-material/blog/
+[Material for MkDocs blog]: https://material.mkdocs-ng.org/blog/
 
 ## Setting up your blog
 
@@ -295,7 +295,7 @@ subsections:
       - Homepage: index.md
       - Blog index: blog/index.md
       - External links:
-        - Material documentation: https://mkdocs-ng.github.io/mkdocs-material
+        - Material documentation: https://material.mkdocs-ng.org
     ---
     ```
 

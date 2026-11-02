@@ -15,7 +15,7 @@ and brings value to both new and experienced users of Material for MkDocs.
 
   [discussion board]: https://github.com/mkdocs-ng/mkdocs-material/discussions
   [issue tracker]: https://github.com/mkdocs-ng/mkdocs-material/issues
-  [documentation]: https://mkdocs-ng.github.io/mkdocs-material/
+  [documentation]: https://material.mkdocs-ng.org/
 
 ## How to contribute
 

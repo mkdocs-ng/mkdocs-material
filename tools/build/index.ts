@@ -445,7 +445,7 @@ const schema$ = merge(
         "$schema": "https://json-schema.org/draft-07/schema",
         "title": "Icon",
         "markdownDescription": [
-          "https://mkdocs-ng.github.io/mkdocs-material",
+          "https://material.mkdocs-ng.org",
           "reference/icons-emojis/#search"
         ].join("/"),
         "type": "string",

@@ -70,7 +70,7 @@ plugins require the `site_url` to be set, so you should always do this.
             ``` json
             {
               "yaml.schemas": {
-                "https://mkdocs-ng.github.io/mkdocs-material/schema.json": "mkdocs.yml"
+                "https://material.mkdocs-ng.org/schema.json": "mkdocs.yml"
               },
               "yaml.customTags": [ // (1)!
                 "!ENV scalar",
@@ -93,7 +93,7 @@ plugins require the `site_url` to be set, so you should always do this.
         2.  Add the following lines at the top of `mkdocs.yml`:
 
             ``` yaml
-            # yaml-language-server: $schema=https://mkdocs-ng.github.io/mkdocs-material/schema.json
+            # yaml-language-server: $schema=https://material.mkdocs-ng.org/schema.json
             ```
 
   [^1]:
@@ -226,7 +226,7 @@ Point your browser to [localhost:8000][live preview] and you should see:
 
 [![Creating your site]][Creating your site]
 
-  [--dirtyreload]: https://mkdocs-ng.github.io/mkdocs/about/release-notes/#support-for-dirty-builds-990
+  [--dirtyreload]: https://mkdocs-ng.org/about/release-notes/#support-for-dirty-builds-990
   [live preview]: http://localhost:8000
   [Creating your site]: assets/screenshots/creating-your-site.png
 

@@ -203,7 +203,7 @@ The following lines must be changed:
       - auto
     ```
 
-  [deprecated in MkDocs 1.2.0]: https://mkdocs-ng.github.io/mkdocs/about/release-notes/#backward-incompatible-changes-in-12
+  [deprecated in MkDocs 1.2.0]: https://mkdocs-ng.org/about/release-notes/#backward-incompatible-changes-in-12
 
 ### Changes to `*.html` files { data-search-exclude }
 
@@ -460,7 +460,7 @@ matches the new structure:
     +  {% endif %}
     +  {% if not config.extra.generator == false %}
     +    Made with
-    +    <a href="https://mkdocs-ng.github.io/mkdocs-material/" target="_blank" rel="noopener">
+    +    <a href="https://material.mkdocs-ng.org/" target="_blank" rel="noopener">
     +      Material for MkDocs
     +    </a>
     +  {% endif %}
@@ -482,7 +482,7 @@ matches the new structure:
     -        {% endif %}
     -        {% if not config.extra.generator == false %}
     -          Made with
-    -          <a href="https://mkdocs-ng.github.io/mkdocs-material/" target="_blank" rel="noopener">
+    -          <a href="https://material.mkdocs-ng.org/" target="_blank" rel="noopener">
     -            Material for MkDocs
     -          </a>
     -        {% endif %}

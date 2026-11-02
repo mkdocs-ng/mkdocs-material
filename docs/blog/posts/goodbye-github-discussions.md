@@ -85,8 +85,8 @@ Despite these measures, we faced serveral structural challenges:
 
   [Community Experts Program]: https://github.com/squidfunk/mkdocs-material/discussions/6363
   [GitHub Discussions]: https://github.com/features/discussions
-  [contribution guidelines]: https://mkdocs-ng.github.io/mkdocs-material/contributing/
-  [bug reporting guidelines]: https://mkdocs-ng.github.io/mkdocs-material/contributing/reporting-a-bug/
+  [contribution guidelines]: https://material.mkdocs-ng.org/contributing/
+  [bug reporting guidelines]: https://material.mkdocs-ng.org/contributing/reporting-a-bug/
 
 ### Addressing these challenges
 
