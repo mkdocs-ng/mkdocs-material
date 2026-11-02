@@ -6,4 +6,4 @@ social:
     title: Material for MkDocs, maintained for MkDocs NG
 ---
 
-Welcome to MkDocs NG Material.
+Welcome to MkDocs NG Material, a maintained fork of Material for MkDocs.

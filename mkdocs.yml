@@ -170,6 +170,7 @@ markdown_extensions:
 
 not_in_nav: |
   /tutorials/**/*.md
+  /insiders/**/*.md
 
 # Page tree
 nav:
@@ -254,12 +255,6 @@ nav:
     - Lists: reference/lists.md
     - Math: reference/math.md
     - Tooltips: reference/tooltips.md
-  - Insiders:
-    - insiders/index.md
-    - Getting started: insiders/getting-started.md
-    - Changelog:
-      - insiders/changelog/index.md
-      - How to upgrade: insiders/upgrade.md
   - Community:
     - Contributing:
       - contributing/index.md
