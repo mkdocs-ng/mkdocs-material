@@ -30,6 +30,12 @@ from mkdocs import utils
 from mkdocs.config.config_options import SubConfig
 from mkdocs.plugins import BasePlugin
 
+try:
+    # mkdocs-ng 1.11+: results kept between the rebuilds of `mkdocs serve`
+    from mkdocs.structure import render_cache
+except ImportError:
+    render_cache = None
+
 from .config import SearchConfig, SearchFieldConfig
 
 try:
@@ -183,7 +189,39 @@ class SearchIndex:
         if search.get("exclude"):
             return
 
-        # Divide page content into sections
+        # During `mkdocs serve`, reuse the entries of a page that didn't change
+        cache = getattr(render_cache, "active", None)
+        if cache is None or not hasattr(cache, "memo"):
+            self._add_entries_for_page(page)
+            return
+
+        # The key holds everything the entries are computed from
+        key = (
+            "material/search",
+            page.url,
+            str(page.title),
+            page.content,
+            _toc_key(page.toc),
+            repr(page.meta.get("title")),
+            repr(page.meta.get("tags")),
+            repr(search.get("boost")),
+            bool(jieba),
+            self.config.get("jieba_dict"),
+            self.config.get("jieba_dict_user")
+        )
+
+        def compute():
+            start = len(self.entries)
+            self._add_entries_for_page(page)
+            return self.entries[start:]
+
+        before = len(self.entries)
+        entries = cache.memo(key, compute)
+        if len(self.entries) == before:
+            self.entries.extend(_copy_entry(entry) for entry in entries)
+
+    # Divide page content into sections and add them to the index
+    def _add_entries_for_page(self, page):
         parser = Parser()
         parser.feed(page.content)
         parser.close()
@@ -592,3 +630,19 @@ void = set([
     "track",                           # Text track
     "wbr"                              # Line break opportunities
 ])
+
+# -----------------------------------------------------------------------------
+
+# Describe a table of contents, for use in a cache key
+def _toc_key(toc):
+    return tuple(
+        (item.id, item.title, item.url, _toc_key(item.children))
+            for item in toc
+    )
+
+# Copy a search index entry, so that no two builds share lists
+def _copy_entry(entry):
+    entry = dict(entry)
+    if "tags" in entry:
+        entry["tags"] = list(entry["tags"])
+    return entry
