@@ -8,6 +8,9 @@
   of pages that didn't change instead of parsing their HTML again (needs
   mkdocs-ng 1.11). With 1,000 pages, an edited page shows up after 4.1 seconds
   instead of 5.9
+- Builds no longer print the "Notice from MkDocs NG Material" banner, which
+  asked users who already had mkdocs-ng-material to install it and linked to
+  the old documentation address
 
 ### 9.8.0 <small>November 1, 2026</small> { id="9.8.0" }
 

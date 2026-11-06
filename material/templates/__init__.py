@@ -17,35 +17,3 @@
 # LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 # IN THE SOFTWARE.
-
-import os
-import sys
-
-from colorama import Fore, Style
-from pathlib import Path
-from sys import stderr
-
-# Check if we're running MkDocs (or mkdocs-ng). This theme is now maintained
-# as part of the mkdocs-ng ecosystem. The CLI command remains `mkdocs`.
-def is_mkdocs():
-    path = Path(sys.argv[0])
-    return path.name in ("mkdocs", "mkdocs.exe") or (
-        path.name == "__main__.py" and path.parent.name == "mkdocs"
-    )
-
-# Print a notice about mkdocs-ng maintainership (once per session)
-if is_mkdocs() and not os.getenv("NO_MKDOCS_NG_NOTICE"):
-    print(
-        "\n"
-        f"{Fore.GREEN} │  ℹ  Notice from MkDocs NG Material{Style.RESET_ALL}\n"
-        f"{Fore.GREEN} │{Style.RESET_ALL}\n"
-        f"{Fore.GREEN} │{Style.RESET_ALL}  This theme is now maintained as part of MkDocs NG.\n"
-        f"{Fore.GREEN} │{Style.RESET_ALL}  Install: pip install mkdocs-ng-material\n"
-        f"{Fore.GREEN} │{Style.RESET_ALL}  Docs: https://material.mkdocs-ng.org/\n"
-        f"{Fore.GREEN} │{Style.RESET_ALL}  GitHub: https://github.com/mkdocs-ng/mkdocs-material\n"
-        f"{Style.RESET_ALL}",
-        file=stderr
-    )
-
-# Disable for subsequent imports
-os.environ["NO_MKDOCS_NG_NOTICE"] = "true"
