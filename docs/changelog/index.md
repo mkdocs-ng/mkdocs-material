@@ -2,7 +2,7 @@
 
 ## Material for MkDocs
 
-### 9.8.1 <small>Unreleased</small> { id="9.8.1" }
+### 9.8.1 <small>November 11, 2026</small> { id="9.8.1" }
 
 - `mkdocs serve` rebuilds faster: the search plugin reuses the index entries
   of pages that didn't change instead of parsing their HTML again (needs
