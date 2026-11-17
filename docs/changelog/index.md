@@ -2,6 +2,12 @@
 
 ## Material for MkDocs
 
+### 9.8.2 <small>November 17, 2026</small> { id="9.8.2" }
+
+- The footer's generator notice reads "Made with MkDocs NG Material" instead
+  of upstream's "Made with Material for MkDocs". It already linked to
+  material.mkdocs-ng.org
+
 ### 9.8.1 <small>November 11, 2026</small> { id="9.8.1" }
 
 - `mkdocs serve` rebuilds faster: the search plugin reuses the index entries
